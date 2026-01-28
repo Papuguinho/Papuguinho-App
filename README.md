@@ -20,9 +20,8 @@
 ### 🛠️ Tecnologias Principais | Core Tech
 
 <p align="left">
-  <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=Flutter&logoColor=white">
-  <img src="https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white">
-  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black">
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKl6XwtK1SOw0KTHTDIHG8_Z09TRBNlhz--w&s" width="48" height="48" style="border-radius: 50%; background-color: #1A1A1A; padding: 5px;" />
+   <img src="https://skillicons.dev/icons?i=flutter,dart,firebase"/>
 </p>
 
 ---
@@ -49,5 +48,6 @@
 ---
 
 <p align="center">
-  Feito com ❤️ por alunos do <b>IFSP - Campus Jacareí</b>
+  Desenvolvido com ❤️ pelos alunos do <b>IFSP - Campus Jacareí</b><br>
+  <i>Developed with ❤️ by students from <b>IFSP - Jacareí Campus</b></i>
 </p>
