@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "111295109266",
+    "project_id": "papuguinho-c32df",
+    "storage_bucket": "papuguinho-c32df.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:111295109266:android:642f2ee9dc681d202eae4b",
+        "android_client_info": {
+          "package_name": "com.mycompany.versao1appcaa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "111295109266-to27b3u83v3br5bhi6pg57cr3mg236ng.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mycompany.versao1appcaa",
+            "certificate_hash": "ee9223ca52f9e39adfcc2d0cf33002811ff06313"
+          }
+        },
+        {
+          "client_id": "111295109266-ubkflk1bhsojpd80j884c0ektvrk05hg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mycompany.versao1appcaa",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "111295109266-jdu98n4fk2k6vpg8ofsgbo9shi52g2bm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVoCL_7C3-RkNJjxu-7Q9hM_BQykPjqwI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "111295109266-jdu98n4fk2k6vpg8ofsgbo9shi52g2bm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "111295109266-bqt8g3ogl09uj1mort8mu3o8a47b5ri3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.versao1appcaa"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

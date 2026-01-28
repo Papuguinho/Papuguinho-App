@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>111295109266-bqt8g3ogl09uj1mort8mu3o8a47b5ri3.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.111295109266-bqt8g3ogl09uj1mort8mu3o8a47b5ri3</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>111295109266-to27b3u83v3br5bhi6pg57cr3mg236ng.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCP_pRyjPZfRRtMfP5fvGRPsQJ167ZeXE0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>111295109266</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.mycompany.versao1appcaa</string>
+	<key>PROJECT_ID</key>
+	<string>papuguinho-c32df</string>
+	<key>STORAGE_BUCKET</key>
+	<string>papuguinho-c32df.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:111295109266:ios:a7d3031a55ec29682eae4b</string>
+</dict>
+</plist>
