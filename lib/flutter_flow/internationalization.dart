@@ -1643,7 +1643,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': '10/10',
       'en': '',
     },
-    'f1rah88w': {
+    'ifvad77v': {
       'pt': '',
       'en': '',
     },

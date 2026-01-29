@@ -1,6 +1,8 @@
 import '/config/kid_mode/disable_kid_mode/disable_kid_mode_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
+import 'dart:ui';
 import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -77,7 +79,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
               children: [
                 Icon(
                   Icons.home,
-                  color: widget.paginaAtiva == 'boardGeral'
+                  color: widget!.paginaAtiva == 'boardGeral'
                       ? Color(0xFF6AEA6A)
                       : FlutterFlowTheme.of(context).secondaryText,
                   size: 35.0,
@@ -94,7 +96,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                           fontStyle:
                               FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                         ),
-                        color: widget.paginaAtiva == 'boardGeral'
+                        color: widget!.paginaAtiva == 'boardGeral'
                             ? Color(0xFF6AEA6A)
                             : FlutterFlowTheme.of(context).secondaryText,
                         letterSpacing: 0.0,
@@ -124,7 +126,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                 children: [
                   Icon(
                     Icons.dashboard,
-                    color: widget.paginaAtiva == 'Pastas'
+                    color: widget!.paginaAtiva == 'Pastas'
                         ? Color(0xFF6AEA6A)
                         : FlutterFlowTheme.of(context).secondaryText,
                     size: 35.0,
@@ -142,7 +144,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                                 .bodyMedium
                                 .fontStyle,
                           ),
-                          color: widget.paginaAtiva == 'Pastas'
+                          color: widget!.paginaAtiva == 'Pastas'
                               ? Color(0xFF6AEA6A)
                               : FlutterFlowTheme.of(context).secondaryText,
                           letterSpacing: 0.0,
@@ -204,7 +206,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                         Icon(
                           Icons.account_circle_outlined,
                           color: () {
-                            if (widget.paginaAtiva == 'Perfil') {
+                            if (widget!.paginaAtiva == 'Perfil') {
                               return Color(0xFF6AEA6A);
                             } else if (FFAppState().modoInfantil) {
                               return FlutterFlowTheme.of(context).error;
@@ -236,7 +238,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                                 .fontStyle,
                           ),
                           color: () {
-                            if (widget.paginaAtiva == 'Perfil') {
+                            if (widget!.paginaAtiva == 'Perfil') {
                               return Color(0xFF6AEA6A);
                             } else if (FFAppState().modoInfantil == true) {
                               return Color(0xFFF00B19);

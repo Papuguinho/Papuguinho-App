@@ -3,8 +3,11 @@ import '/components/button_pictograma/button_pictograma_widget.dart';
 import '/config/customization/criar_pictograma/criar_pictograma_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
+import 'dart:ui';
 import '/flutter_flow/custom_functions.dart' as functions;
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'board_pictogramas_model.dart';
 export 'board_pictogramas_model.dart';
@@ -83,7 +86,7 @@ class _BoardPictogramasWidgetState extends State<BoardPictogramasWidget> {
                     builder: (context) {
                       final item = functions
                               .filtrarPictogramas(
-                                  widget.listaPictogramas?.toList(),
+                                  widget!.listaPictogramas?.toList(),
                                   FFAppState().modoEdicao)
                               ?.toList() ??
                           [];

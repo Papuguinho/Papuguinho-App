@@ -719,16 +719,16 @@ class _FlutterFlowButtonTabBarState extends State<FlutterFlowButtonTabBar>
       child: TextButton(
         onPressed: () => _handleTap(index),
         style: ButtonStyle(
-          elevation: WidgetStateProperty.all(
+          elevation: MaterialStateProperty.all(
               widget.useToggleButtonStyle ? 0 : widget.elevation),
 
           /// give a pretty small minimum size
-          minimumSize: WidgetStateProperty.all(const Size(10, 10)),
-          padding: WidgetStateProperty.all(EdgeInsets.zero),
-          textStyle: WidgetStateProperty.all(textStyle),
-          foregroundColor: WidgetStateProperty.all(textColor),
+          minimumSize: MaterialStateProperty.all(const Size(10, 10)),
+          padding: MaterialStateProperty.all(EdgeInsets.zero),
+          textStyle: MaterialStateProperty.all(textStyle),
+          foregroundColor: MaterialStateProperty.all(textColor),
           tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-          shape: WidgetStateProperty.all(
+          shape: MaterialStateProperty.all(
             widget.useToggleButtonStyle
                 ? const RoundedRectangleBorder(
                     side: BorderSide.none,

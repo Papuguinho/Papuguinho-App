@@ -1,9 +1,13 @@
 import '/auth/firebase_auth/auth_util.dart';
+import '/backend/schema/structs/index.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
+import 'dart:ui';
 import '/custom_code/actions/index.dart' as actions;
 import '/custom_code/widgets/index.dart' as custom_widgets;
 import '/flutter_flow/custom_functions.dart' as functions;
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -64,19 +68,19 @@ class _ButtonPictogramaWidgetState extends State<ButtonPictogramaWidget> {
     context.watch<FFAppState>();
 
     return Visibility(
-      visible: (widget.ativo == true) || (FFAppState().modoEdicao == true),
+      visible: (widget!.ativo == true) || (FFAppState().modoEdicao == true),
       child: Opacity(
         opacity: () {
           if ((FFAppState()
                       .listaBoardGeral
-                      .elementAtOrNull(widget.index!)
+                      .elementAtOrNull(widget!.index!)
                       ?.ativo ==
                   true) &&
               (FFAppState().modoEdicao == false)) {
             return 1.0;
           } else if ((FFAppState()
                       .listaBoardGeral
-                      .elementAtOrNull(widget.index!)
+                      .elementAtOrNull(widget!.index!)
                       ?.ativo ==
                   false) &&
               (FFAppState().modoEdicao == true)) {
@@ -87,7 +91,7 @@ class _ButtonPictogramaWidgetState extends State<ButtonPictogramaWidget> {
         }(),
         child: Container(
           decoration: BoxDecoration(
-            color: widget.cor,
+            color: widget!.cor,
             borderRadius: BorderRadius.circular(16.0),
             shape: BoxShape.rectangle,
             border: Border.all(
@@ -107,15 +111,15 @@ class _ButtonPictogramaWidgetState extends State<ButtonPictogramaWidget> {
                 FFAppState().buttonPress = true;
                 _model.updatePage(() {});
                 logFirebaseEvent('Stack_update_app_state');
-                FFAppState().addToDisplaymensage('${widget.texto} ');
+                FFAppState().addToDisplaymensage('${widget!.texto} ');
                 FFAppState().update(() {});
                 logFirebaseEvent('Stack_custom_action');
                 await actions.speakText(
-                  widget.texto!,
+                  widget!.texto!,
                 );
                 logFirebaseEvent('Stack_update_app_state');
                 FFAppState().Historico =
-                    '${'${FFAppState().Historico} '}${functions.convertToUpperCase(widget.texto)}';
+                    '${'${FFAppState().Historico} '}${functions.convertToUpperCase(widget!.texto)}';
                 safeSetState(() {});
                 logFirebaseEvent('Stack_update_app_state');
                 FFAppState().buttonPress = false;
@@ -132,7 +136,7 @@ class _ButtonPictogramaWidgetState extends State<ButtonPictogramaWidget> {
                   child: Stack(
                     alignment: AlignmentDirectional(0.0, 0.0),
                     children: [
-                      if (functions.textoContem(widget.img, 'http') == true)
+                      if (functions.textoContem(widget!.img, 'http') == true)
                         Align(
                           alignment: AlignmentDirectional(0.0, -1.0),
                           child: Padding(
@@ -164,7 +168,7 @@ class _ButtonPictogramaWidgetState extends State<ButtonPictogramaWidget> {
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(8.0),
                               child: Image.network(
-                                '${widget.img}',
+                                '${widget!.img}',
                                 width: () {
                                   if (MediaQuery.sizeOf(context).width <
                                       kBreakpointSmall) {
@@ -192,7 +196,7 @@ class _ButtonPictogramaWidgetState extends State<ButtonPictogramaWidget> {
                             ),
                           ),
                         ),
-                      if (functions.textoContem(widget.img, 'http') == false)
+                      if (functions.textoContem(widget!.img, 'http') == false)
                         Align(
                           alignment: AlignmentDirectional(0.0, -1.0),
                           child: Padding(
@@ -230,7 +234,7 @@ class _ButtonPictogramaWidgetState extends State<ButtonPictogramaWidget> {
                             child: custom_widgets.ImagemSemPiscar(
                               width: MediaQuery.sizeOf(context).width * 1.0,
                               height: 90.0,
-                              imgBase64: widget.img!,
+                              imgBase64: widget!.img!,
                               largura: () {
                                 if (MediaQuery.sizeOf(context).width <
                                     kBreakpointSmall) {
@@ -285,7 +289,7 @@ class _ButtonPictogramaWidgetState extends State<ButtonPictogramaWidget> {
                   alignment: AlignmentDirectional(0.0, 1.0),
                   child: Text(
                     valueOrDefault<String>(
-                      functions.convertToUpperCase(widget.texto),
+                      functions.convertToUpperCase(widget!.texto),
                       'palavra',
                     ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -333,12 +337,12 @@ class _ButtonPictogramaWidgetState extends State<ButtonPictogramaWidget> {
                       children: [
                         if (FFAppState()
                                     .listaBoardGeral
-                                    .elementAtOrNull(widget.index!)
+                                    .elementAtOrNull(widget!.index!)
                                     ?.idPictograma !=
                                 null &&
                             FFAppState()
                                     .listaBoardGeral
-                                    .elementAtOrNull(widget.index!)
+                                    .elementAtOrNull(widget!.index!)
                                     ?.idPictograma !=
                                 '')
                           Align(
@@ -386,7 +390,7 @@ class _ButtonPictogramaWidgetState extends State<ButtonPictogramaWidget> {
                                     'biblioteca_pictogramas',
                                     FFAppState()
                                         .listaBoardGeral
-                                        .elementAtOrNull(widget.index!)!
+                                        .elementAtOrNull(widget!.index!)!
                                         .idPictograma,
                                     currentUserUid,
                                   );
@@ -394,7 +398,7 @@ class _ButtonPictogramaWidgetState extends State<ButtonPictogramaWidget> {
                                   FFAppState().removeFromListaBoardGeral(
                                       FFAppState()
                                           .listaBoardGeral
-                                          .elementAtOrNull(widget.index!)!);
+                                          .elementAtOrNull(widget!.index!)!);
                                   safeSetState(() {});
                                 } else {
                                   return;
@@ -411,7 +415,7 @@ class _ButtonPictogramaWidgetState extends State<ButtonPictogramaWidget> {
                           children: [
                             if (FFAppState()
                                     .listaBoardGeral
-                                    .elementAtOrNull(widget.index!)
+                                    .elementAtOrNull(widget!.index!)
                                     ?.ativo ==
                                 true)
                               Align(
@@ -429,7 +433,7 @@ class _ButtonPictogramaWidgetState extends State<ButtonPictogramaWidget> {
                                           'BUTTON_PICTOGRAMA_Icon_2gv5fkm1_ON_TAP');
                                       logFirebaseEvent('Icon_update_app_state');
                                       FFAppState().updateListaBoardGeralAtIndex(
-                                        widget.index!,
+                                        widget!.index!,
                                         (e) => e..ativo = false,
                                       );
                                       safeSetState(() {});
@@ -445,7 +449,7 @@ class _ButtonPictogramaWidgetState extends State<ButtonPictogramaWidget> {
                               ),
                             if (FFAppState()
                                     .listaBoardGeral
-                                    .elementAtOrNull(widget.index!)
+                                    .elementAtOrNull(widget!.index!)
                                     ?.ativo ==
                                 false)
                               Align(
@@ -463,7 +467,7 @@ class _ButtonPictogramaWidgetState extends State<ButtonPictogramaWidget> {
                                           'BUTTON_PICTOGRAMA_Icon_a1e75vv0_ON_TAP');
                                       logFirebaseEvent('Icon_update_app_state');
                                       FFAppState().updateListaBoardGeralAtIndex(
-                                        widget.index!,
+                                        widget!.index!,
                                         (e) => e..ativo = true,
                                       );
                                       safeSetState(() {});

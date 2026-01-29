@@ -1,5 +1,9 @@
+import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'picture_papuguinho_model.dart';
 export 'picture_papuguinho_model.dart';
 
@@ -50,7 +54,7 @@ class _PicturePapuguinhoWidgetState extends State<PicturePapuguinhoWidget> {
       onTap: () async {
         logFirebaseEvent('PICTURE_PAPUGUINHO_CircleImage_n7fpncb5_');
         logFirebaseEvent('CircleImage_update_app_state');
-        FFAppState().foto = widget.img!;
+        FFAppState().foto = widget!.img!;
         safeSetState(() {});
       },
       child: Container(
@@ -61,7 +65,7 @@ class _PicturePapuguinhoWidgetState extends State<PicturePapuguinhoWidget> {
           shape: BoxShape.circle,
         ),
         child: Image.network(
-          widget.img!,
+          widget!.img!,
           fit: BoxFit.cover,
         ),
       ),

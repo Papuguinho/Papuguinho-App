@@ -1,9 +1,11 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
 import '/custom_code/actions/index.dart' as actions;
 import '/flutter_flow/custom_functions.dart' as functions;
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'button_pastas_model.dart';
 export 'button_pastas_model.dart';
 
@@ -59,7 +61,7 @@ class _ButtonPastasWidgetState extends State<ButtonPastasWidget> {
         width: 100.0,
         height: 100.0,
         decoration: BoxDecoration(
-          color: widget.cor,
+          color: widget!.cor,
           borderRadius: BorderRadius.circular(16.0),
           border: Border.all(
             color: FlutterFlowTheme.of(context).primaryText,
@@ -75,7 +77,7 @@ class _ButtonPastasWidgetState extends State<ButtonPastasWidget> {
             logFirebaseEvent('Stack_custom_action');
             await actions.navegarDinamico(
               context,
-              widget.destino!,
+              widget!.destino!,
             );
           },
           child: Stack(
@@ -84,7 +86,7 @@ class _ButtonPastasWidgetState extends State<ButtonPastasWidget> {
                 alignment: AlignmentDirectional(0.0, -1.0),
                 child: Text(
                   valueOrDefault<String>(
-                    functions.convertToUpperCase(widget.texto),
+                    functions.convertToUpperCase(widget!.texto),
                     'palavra',
                   ),
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -123,13 +125,13 @@ class _ButtonPastasWidgetState extends State<ButtonPastasWidget> {
               ),
               Stack(
                 children: [
-                  if (functions.textoContem(widget.img, 'http') == true)
+                  if (functions.textoContem(widget!.img, 'http') == true)
                     Align(
                       alignment: AlignmentDirectional(0.0, 0.0),
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(8.0),
                         child: Image.network(
-                          '${widget.img}',
+                          '${widget!.img}',
                           width: () {
                             if (MediaQuery.sizeOf(context).width <
                                 kBreakpointSmall) {
@@ -151,14 +153,14 @@ class _ButtonPastasWidgetState extends State<ButtonPastasWidget> {
                         ),
                       ),
                     ),
-                  if (functions.textoContem(widget.img, 'http') == false)
+                  if (functions.textoContem(widget!.img, 'http') == false)
                     Align(
                       alignment: AlignmentDirectional(0.0, 0.0),
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(8.0),
                         child: Image.memory(
                           functions
-                                  .converterBase64ParaBytes(widget.img)
+                                  .converterBase64ParaBytes(widget!.img)
                                   ?.bytes ??
                               Uint8List.fromList([]),
                           width: () {

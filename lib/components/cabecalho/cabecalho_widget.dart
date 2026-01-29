@@ -4,9 +4,13 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import 'dart:math';
+import 'dart:ui';
 import '/custom_code/actions/index.dart' as actions;
 import '/flutter_flow/custom_functions.dart' as functions;
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -255,7 +259,7 @@ class _CabecalhoWidgetState extends State<CabecalhoWidget>
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              if (widget.mostrarBotaoVoltar)
+              if (widget!.mostrarBotaoVoltar)
                 Align(
                   alignment: AlignmentDirectional(1.0, 0.0),
                   child: Padding(
@@ -299,7 +303,7 @@ class _CabecalhoWidgetState extends State<CabecalhoWidget>
                           context.safePop();
                         },
                         text: FFLocalizations.of(context).getText(
-                          'f1rah88w' /*  */,
+                          'ifvad77v' /*  */,
                         ),
                         icon: Icon(
                           Icons.chevron_left,
@@ -551,7 +555,7 @@ class _CabecalhoWidgetState extends State<CabecalhoWidget>
                       highlightColor: Colors.transparent,
                       onTap: () async {
                         logFirebaseEvent(
-                            'CABECALHO_COMP_Container_1derynur_ON_TAP');
+                            'CABECALHO_COMP_Container_gg4kl3wc_ON_TAP');
                         logFirebaseEvent('Container_update_app_state');
                         FFAppState().contador = FFAppState().contador + 1;
                         safeSetState(() {});
@@ -639,7 +643,7 @@ class _CabecalhoWidgetState extends State<CabecalhoWidget>
                       highlightColor: Colors.transparent,
                       onTap: () async {
                         logFirebaseEvent(
-                            'CABECALHO_COMP_Container_44ncndq6_ON_TAP');
+                            'CABECALHO_COMP_Container_73w984b3_ON_TAP');
                         logFirebaseEvent('Container_custom_action');
                         await actions.stopTextToSpeech();
                         logFirebaseEvent('Container_update_app_state');
