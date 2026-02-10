@@ -55,7 +55,7 @@ class _TopicGirlWidgetState extends State<TopicGirlWidget> {
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         appBar: AppBar(
-          backgroundColor: Color(0xFF6AEA6A),
+          backgroundColor: Color(0xFF5FB15F),
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
             borderColor: Colors.transparent,
@@ -134,17 +134,6 @@ class _TopicGirlWidgetState extends State<TopicGirlWidget> {
                       logFirebaseEvent('Container_navigate_to');
 
                       context.pushNamed(GirlN1Widget.routeName);
-
-                      logFirebaseEvent('Container_update_app_state');
-                      FFAppState().palavraTemas = 'Para fazer xixi ?';
-                      safeSetState(() {});
-                      logFirebaseEvent('Container_custom_action');
-                      await actions.speakText(
-                        FFAppState().palavraTemas,
-                      );
-                      logFirebaseEvent('Container_update_app_state');
-                      FFAppState().palavraTemas = '';
-                      safeSetState(() {});
                     },
                     child: Material(
                       color: Colors.transparent,
@@ -158,7 +147,7 @@ class _TopicGirlWidgetState extends State<TopicGirlWidget> {
                           50.0,
                         ),
                         decoration: BoxDecoration(
-                          color: Color(0xFFE8F07F),
+                          color: Color(0xFFFFEE8C),
                           borderRadius: BorderRadius.circular(15.0),
                         ),
                         child: Stack(
@@ -276,7 +265,7 @@ class _TopicGirlWidgetState extends State<TopicGirlWidget> {
                       child: Container(
                         height: MediaQuery.sizeOf(context).height * 0.3,
                         decoration: BoxDecoration(
-                          color: Color(0xFFCF7C4E),
+                          color: Color(0xFFA06F53),
                           borderRadius: BorderRadius.circular(15.0),
                         ),
                         child: Stack(

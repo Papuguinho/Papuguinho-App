@@ -444,7 +444,7 @@ class _TalkToUsWidgetState extends State<TalkToUsWidget>
                                             iconPadding:
                                                 EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 0.0, 0.0),
-                                            color: Color(0xFF6AEA6A),
+                                            color: Color(0xFF5FB15F),
                                             textStyle: FlutterFlowTheme.of(
                                                     context)
                                                 .titleSmall

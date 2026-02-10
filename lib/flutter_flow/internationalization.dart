@@ -167,6 +167,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'NÍVEL ESCOLAR',
       'en': '',
     },
+    'f2tevwz9': {
+      'pt': 'Motivo de usar o aplicativo',
+      'en': '',
+    },
     '0lraaxue': {
       'pt': 'Gênero',
       'en': '',
@@ -181,10 +185,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'ehr3nd6c': {
       'pt': 'Outro',
-      'en': '',
-    },
-    'f2tevwz9': {
-      'pt': 'Motivo de usar o aplicativo, detalhar nível de suporte',
       'en': '',
     },
     'vp5ge70n': {
@@ -311,7 +311,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '',
     },
     '3op80gx2': {
-      'pt': 'Pesquise por palavras-chave...',
+      'pt': ' Palavras-chave...',
       'en': '',
     },
     'y83716al': {
@@ -319,284 +319,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '',
     },
     '1zh1ftxw': {
-      'pt': 'Home',
-      'en': '',
-    },
-  },
-  // T_DISCIPLINAS
-  {
-    'a0lba9sg': {
-      'pt': 'QUÍMICA',
-      'en': '',
-    },
-    'ppms2sgo': {
-      'pt': 'MATEMÁTICA',
-      'en': '',
-    },
-    '74nwsioa': {
-      'pt': 'FÍSICA',
-      'en': '',
-    },
-    'gp444m5t': {
-      'pt': 'BIOLOGIA',
-      'en': '',
-    },
-    'j50f0da3': {
-      'pt': 'DISCIPLINAS',
-      'en': '',
-    },
-    'as6xaqee': {
-      'pt': 'Home',
-      'en': '',
-    },
-  },
-  // aminas
-  {
-    'udoborcq': {
-      'pt': 'Aminas',
-      'en': '',
-    },
-    'cuvol83s': {
-      'pt': 'NOME DA MOLÉCULA',
-      'en': '',
-    },
-    'olxe499d': {
-      'pt': 'SEROTONINA',
-      'en': '',
-    },
-    'imf3uth5': {
-      'pt': 'FÓRMULA ESTRUTURAL',
-      'en': '',
-    },
-    'omv1yhbs': {
-      'pt': 'PARA QUE SERVE',
-      'en': '',
-    },
-    'ozqfo5bp': {
-      'pt': 'HUMOR',
-      'en': '',
-    },
-    'ywfesi1x': {
-      'pt': 'COMO PRODUZIR',
-      'en': '',
-    },
-    '71ld5uol': {
-      'pt': 'FAZER EXERCÍCIO FÍSICO',
-      'en': '',
-    },
-    'lfm7l127': {
-      'pt': 'NOME DA MOLÉCULA',
-      'en': '',
-    },
-    '6klc86gg': {
-      'pt': 'DOPAMINA',
-      'en': '',
-    },
-    'oygn6od1': {
-      'pt': 'FÓRMULA ESTRUTURAL',
-      'en': '',
-    },
-    'uysxf1vr': {
-      'pt': 'PARA QUE SERVE',
-      'en': '',
-    },
-    'eitq3cp3': {
-      'pt': 'MOTIVAÇÃO',
-      'en': '',
-    },
-    '0m2s7okc': {
-      'pt': 'COMO PRODUZIR',
-      'en': '',
-    },
-    'k0fm5c51': {
-      'pt': 'ALIMENTAÇÃO SAUDÁVEL',
-      'en': '',
-    },
-    '4h1cne1d': {
-      'pt': 'NOME DA MOLÉCULA',
-      'en': '',
-    },
-    'aa5g3akw': {
-      'pt': 'ENDORFINA',
-      'en': '',
-    },
-    'u3l2zcgt': {
-      'pt': 'FÓRMULA ESTRUTURAL',
-      'en': '',
-    },
-    'p42g5vwg': {
-      'pt': 'PARA QUE SERVE',
-      'en': '',
-    },
-    'jrruytsw': {
-      'pt': 'ALÍVIO DA DOR',
-      'en': '',
-    },
-    '061mhhya': {
-      'pt': 'COMO PRODUZIR',
-      'en': '',
-    },
-    '7c3fl7xb': {
-      'pt': 'BRINCAR',
-      'en': '',
-    },
-    'q75e6n2l': {
-      'pt': 'NOME DA MOLÉCULA',
-      'en': '',
-    },
-    'nobwo816': {
-      'pt': 'OCITOCINA',
-      'en': '',
-    },
-    '0q9gmv8c': {
-      'pt': 'FÓRMULA ESTRUTURAL',
-      'en': '',
-    },
-    '377hfcak': {
-      'pt': '...',
-      'en': '',
-    },
-    'dooia5yc': {
-      'pt': '...',
-      'en': '',
-    },
-    'xzk7ate5': {
-      'pt': 'PARA QUE SERVE',
-      'en': '',
-    },
-    'y4plj1mq': {
-      'pt': 'AMOR E PRAZER',
-      'en': '',
-    },
-    'zg9f00s1': {
-      'pt': 'COMO PRODUZIR',
-      'en': '',
-    },
-    'i17zn5t2': {
-      'pt': 'CARINHO',
-      'en': '',
-    },
-    '7xui0uz9': {
-      'pt': 'NOME DA MOLÉCULA',
-      'en': '',
-    },
-    'otjhejnn': {
-      'pt': 'OCITOCINA',
-      'en': '',
-    },
-    'c20i2k67': {
-      'pt': 'FÓRMULA ESTRUTURAL',
-      'en': '',
-    },
-    'xokpzxxo': {
-      'pt': '...',
-      'en': '',
-    },
-    'qt7z5lyp': {
-      'pt': '...',
-      'en': '',
-    },
-    's76cmfhn': {
-      'pt': 'PARA QUE SERVE',
-      'en': '',
-    },
-    '2tw4biau': {
-      'pt': 'AMOR E PRAZER',
-      'en': '',
-    },
-    'sk74ges5': {
-      'pt': 'COMO PRODUZIR',
-      'en': '',
-    },
-    'h7y9pdd3': {
-      'pt': 'CARINHO',
-      'en': '',
-    },
-    '44sk70sa': {
-      'pt': 'NOME DA MOLÉCULA',
-      'en': '',
-    },
-    '6r2ygdil': {
-      'pt': 'ENDORFINA',
-      'en': '',
-    },
-    'ka382oa1': {
-      'pt': 'FÓRMULA ESTRUTURAL',
-      'en': '',
-    },
-    '09byefc0': {
-      'pt': 'PARA QUE SERVE',
-      'en': '',
-    },
-    'dzlwxd0c': {
-      'pt': 'ALÍVIO DA DOR',
-      'en': '',
-    },
-    'i1y2arod': {
-      'pt': 'COMO PRODUZIR',
-      'en': '',
-    },
-    'qq3qd2d3': {
-      'pt': 'BRINCAR',
-      'en': '',
-    },
-    'vsdv6rog': {
-      'pt': 'NOME DA MOLÉCULA',
-      'en': '',
-    },
-    'a0cso834': {
-      'pt': 'DOPAMINA',
-      'en': '',
-    },
-    'hc4lna6n': {
-      'pt': 'FÓRMULA ESTRUTURAL',
-      'en': '',
-    },
-    'a4zfcknp': {
-      'pt': 'PARA QUE SERVE',
-      'en': '',
-    },
-    'dunvq2lq': {
-      'pt': 'MOTIVAÇÃO',
-      'en': '',
-    },
-    'd9i8ef2x': {
-      'pt': 'COMO PRODUZIR',
-      'en': '',
-    },
-    'rk33szt0': {
-      'pt': 'ALIMENTAÇÃO SAUDÁVEL',
-      'en': '',
-    },
-    'pwcj1p0e': {
-      'pt': 'NOME DA MOLÉCULA',
-      'en': '',
-    },
-    'mu7053p8': {
-      'pt': 'SEROTONINA',
-      'en': '',
-    },
-    'bmlajjyi': {
-      'pt': 'FÓRMULA ESTRUTURAL',
-      'en': '',
-    },
-    'lv7h5p6g': {
-      'pt': 'PARA QUE SERVE',
-      'en': '',
-    },
-    'abptj3l6': {
-      'pt': 'HUMOR',
-      'en': '',
-    },
-    'qifvdy3o': {
-      'pt': 'COMO PRODUZIR',
-      'en': '',
-    },
-    'nsroedpa': {
-      'pt': 'FAZER EXERCÍCIO FÍSICO',
-      'en': '',
-    },
-    'sl1siavi': {
       'pt': 'Home',
       'en': '',
     },
@@ -1039,413 +761,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '',
     },
   },
-  // T_QUIMICA
-  {
-    '2cse2fy1': {
-      'pt': 'QUÍMICA \nGERAL',
-      'en': '',
-    },
-    'cgppuk2c': {
-      'pt': 'FÍSICO \nQUÍMICA',
-      'en': '',
-    },
-    '5g9r793q': {
-      'pt': 'QUÍMICA \nORGÂNICA',
-      'en': '',
-    },
-    'vpqtui2d': {
-      'pt': 'QUÍMICA NA \nPRÁTICA',
-      'en': '',
-    },
-    '7cmsrtx9': {
-      'pt': 'TÓPICOS DE QUÍMICA',
-      'en': '',
-    },
-    '51xm0f57': {
-      'pt': 'Home',
-      'en': '',
-    },
-  },
-  // QUIMICA_ORGANICA
-  {
-    '4hnmzh02': {
-      'pt': 'HIDROCARBONETOS',
-      'en': '',
-    },
-    '4f02df3a': {
-      'pt': 'FUNÇÕES OXIGENADAS',
-      'en': '',
-    },
-    'c18dfk74': {
-      'pt': 'FUNÇÕES NITROGENADAS',
-      'en': '',
-    },
-    'kh4nbw70': {
-      'pt': 'FUNÇÕES SULFURADAS',
-      'en': '',
-    },
-    '46h3yifk': {
-      'pt': 'QUÍMICA ORGÂNICA',
-      'en': '',
-    },
-    'mdy20q23': {
-      'pt': 'Home',
-      'en': '',
-    },
-  },
-  // To_nitrogenadas
-  {
-    'dcsssse7': {
-      'pt': 'AMINAS',
-      'en': '',
-    },
-    'yh3lism4': {
-      'pt': 'AMIDAS',
-      'en': '',
-    },
-    'xhp8fjm2': {
-      'pt': 'NITRILAS',
-      'en': '',
-    },
-    '2vnkuq08': {
-      'pt': 'NITROCOMPOSTOS',
-      'en': '',
-    },
-    '0yk1jh2g': {
-      'pt': 'NITROGENADAS',
-      'en': '',
-    },
-    'pvirz3t2': {
-      'pt': 'Home',
-      'en': '',
-    },
-  },
-  // QUIMICA_PRATICA
-  {
-    'c0i2i6tr': {
-      'pt': 'MEDICAMENTOS',
-      'en': '',
-    },
-    'xvrnfqyz': {
-      'pt': 'CAMINHO DO \nPETRÓLEO',
-      'en': '',
-    },
-    '1l7jqurw': {
-      'pt': 'TRATAMENTO DE \nÁGUA',
-      'en': '',
-    },
-    'vbzf8ygm': {
-      'pt': 'QUÍMICA NA \nCOZINHA',
-      'en': '',
-    },
-    'nz0hfi51': {
-      'pt': 'QUÍMICA NA PRÁTICA',
-      'en': '',
-    },
-    '9nhpfoud': {
-      'pt': 'Home',
-      'en': '',
-    },
-  },
-  // MEDICAMENTOS
-  {
-    'jz4raffu': {
-      'pt': 'MEDICAMENTOS',
-      'en': '',
-    },
-    '0xlosp4k': {
-      'pt': 'FÓRMULA ESTRUTURAL',
-      'en': '',
-    },
-    'ojo1z520': {
-      'pt': 'IBUPROFENO',
-      'en': '',
-    },
-    'ahs3duue': {
-      'pt': 'PARA QUE SERVE',
-      'en': '',
-    },
-    'wr5k7d9u': {
-      'pt': 'MELHORA INFLAMAÇÕES',
-      'en': '',
-    },
-    '73gzfx53': {
-      'pt': 'FUNÇÃO ESPECÍFICA',
-      'en': '',
-    },
-    'bzd0ld8u': {
-      'pt': 'ÁCIDO CARBOXÍLICO',
-      'en': '',
-    },
-    'j3t2bog5': {
-      'pt': 'FÓRMULA ESTRUTURAL',
-      'en': '',
-    },
-    'csc0jijp': {
-      'pt': 'DIPIRONA',
-      'en': '',
-    },
-    '63bee0ts': {
-      'pt': 'PARA QUE SERVE',
-      'en': '',
-    },
-    'srhs8h6k': {
-      'pt': 'ALÍVIO DE DORES',
-      'en': '',
-    },
-    '8atevy7g': {
-      'pt': 'FUNÇÃO ESPECÍFICA',
-      'en': '',
-    },
-    'xudwmmgv': {
-      'pt': 'FUNÇÃO AMIDA',
-      'en': '',
-    },
-    'nkb5vo9o': {
-      'pt': 'FÓRMULA ESTRUTURAL',
-      'en': '',
-    },
-    'zzmjdb2e': {
-      'pt': 'LORATADINA',
-      'en': '',
-    },
-    'wojgtval': {
-      'pt': 'PARA QUE SERVE',
-      'en': '',
-    },
-    'uxc896o8': {
-      'pt': 'ALÍVIO DE ALERGIAS',
-      'en': '',
-    },
-    'kwt3xc7o': {
-      'pt': 'FUNÇÃO ESPECÍFICA',
-      'en': '',
-    },
-    'mkjti58h': {
-      'pt': 'FUNÇÃO ÉSTER',
-      'en': '',
-    },
-    '65ap883n': {
-      'pt': 'FÓRMULA ESTRUTURAL',
-      'en': '',
-    },
-    '20mgzkg2': {
-      'pt': 'PARACETAMOL',
-      'en': '',
-    },
-    'xw5zebe6': {
-      'pt': 'PARA QUE SERVE',
-      'en': '',
-    },
-    'rtv50vtc': {
-      'pt': 'ALÍVIO DE FEBRE',
-      'en': '',
-    },
-    'djfygjcp': {
-      'pt': 'FUNÇÃO ESPECÍFICA',
-      'en': '',
-    },
-    'pev7r305': {
-      'pt': 'FUNÇÃO FENOL',
-      'en': '',
-    },
-    '6n4f8qwz': {
-      'pt': 'FÓRMULA ESTRUTURAL',
-      'en': '',
-    },
-    'p75v7dnd': {
-      'pt': 'AMOXICILINA',
-      'en': '',
-    },
-    'mlbrgb41': {
-      'pt': 'PARA QUE SERVE',
-      'en': '',
-    },
-    'q46nor61': {
-      'pt': 'ALÍVIO DE INFECÇÕES BACTERIANAS',
-      'en': '',
-    },
-    'h6kwxuvn': {
-      'pt': 'FUNÇÃO ESPECÍFICA',
-      'en': '',
-    },
-    'me6jbwul': {
-      'pt': 'FUNÇÃO AMINA',
-      'en': '',
-    },
-    '60i18z6v': {
-      'pt': 'FÓRMULA ESTRUTURAL',
-      'en': '',
-    },
-    '47744p9g': {
-      'pt': 'DRAMIN',
-      'en': '',
-    },
-    'pfto56ti': {
-      'pt': 'PARA QUE SERVE',
-      'en': '',
-    },
-    '4y49ftjy': {
-      'pt': 'ALÍVIO DE ENJÔO',
-      'en': '',
-    },
-    'lba4sbgn': {
-      'pt': 'FUNÇÃO ESPECÍFICA',
-      'en': '',
-    },
-    '1aueh2ej': {
-      'pt': 'FUNÇÃO ÉTER',
-      'en': '',
-    },
-    '62hgu4ki': {
-      'pt': 'FÓRMULA ESTRUTURAL',
-      'en': '',
-    },
-    'env9dkkx': {
-      'pt': 'IBUPROFENO',
-      'en': '',
-    },
-    'trev0l62': {
-      'pt': 'PARA QUE SERVE',
-      'en': '',
-    },
-    'md0l3ws5': {
-      'pt': 'MELHORA INFLAMAÇÕES',
-      'en': '',
-    },
-    'htxn7661': {
-      'pt': 'FUNÇÃO ESPECÍFICA',
-      'en': '',
-    },
-    '7aijtui4': {
-      'pt': 'ÁCIDO CARBOXÍLICO',
-      'en': '',
-    },
-    'al606wmw': {
-      'pt': 'FÓRMULA ESTRUTURAL',
-      'en': '',
-    },
-    'zpw0sjle': {
-      'pt': 'DIPIRONA',
-      'en': '',
-    },
-    'njtegvhr': {
-      'pt': 'PARA QUE SERVE',
-      'en': '',
-    },
-    'g5oy4gkw': {
-      'pt': 'ALÍVIO DE DORES',
-      'en': '',
-    },
-    '8ifnoyxq': {
-      'pt': 'FUNÇÃO ESPECÍFICA',
-      'en': '',
-    },
-    'xhhpfn7r': {
-      'pt': 'FUNÇÃO AMIDA',
-      'en': '',
-    },
-    '01z9k1r4': {
-      'pt': 'FÓRMULA ESTRUTURAL',
-      'en': '',
-    },
-    'ecmixcea': {
-      'pt': 'LORATADINA',
-      'en': '',
-    },
-    '7a24u7r0': {
-      'pt': 'PARA QUE SERVE',
-      'en': '',
-    },
-    '5sb3kmxf': {
-      'pt': 'ALÍVIO DE ALERGIAS',
-      'en': '',
-    },
-    'eyhqrin6': {
-      'pt': 'FUNÇÃO ESPECÍFICA',
-      'en': '',
-    },
-    '8may1xcj': {
-      'pt': 'FUNÇÃO ÉSTER',
-      'en': '',
-    },
-    'bhffpm6y': {
-      'pt': 'FÓRMULA ESTRUTURAL',
-      'en': '',
-    },
-    'jcrrblnd': {
-      'pt': 'PARACETAMOL',
-      'en': '',
-    },
-    '7nkvs418': {
-      'pt': 'PARA QUE SERVE',
-      'en': '',
-    },
-    'e9ew32ic': {
-      'pt': 'ALÍVIO DE FEBRE',
-      'en': '',
-    },
-    'fiwmo3qv': {
-      'pt': 'FUNÇÃO ESPECÍFICA',
-      'en': '',
-    },
-    'vj7l4olq': {
-      'pt': 'FUNÇÃO FENOL',
-      'en': '',
-    },
-    '3k3p0efp': {
-      'pt': 'FÓRMULA ESTRUTURAL',
-      'en': '',
-    },
-    '0eh9k3sb': {
-      'pt': 'AMOXICILINA',
-      'en': '',
-    },
-    'xl1codbu': {
-      'pt': 'PARA QUE SERVE',
-      'en': '',
-    },
-    'g7frtvfc': {
-      'pt': 'ALÍVIO DE INFECÇÕES ',
-      'en': '',
-    },
-    'g9ycim6d': {
-      'pt': 'FUNÇÃO ESPECÍFICA',
-      'en': '',
-    },
-    '2h6o26y4': {
-      'pt': 'FUNÇÃO AMINA',
-      'en': '',
-    },
-    'jn9ft5ke': {
-      'pt': 'FÓRMULA ESTRUTURAL',
-      'en': '',
-    },
-    'ugbz5me1': {
-      'pt': 'DRAMIN',
-      'en': '',
-    },
-    '0xk4ss3y': {
-      'pt': 'PARA QUE SERVE',
-      'en': '',
-    },
-    'oilzkba1': {
-      'pt': 'ALÍVIO DE ENJÔO',
-      'en': '',
-    },
-    'x4zt0ebm': {
-      'pt': 'FUNÇÃO ESPECÍFICA',
-      'en': '',
-    },
-    '975oh1ic': {
-      'pt': 'BENZENO',
-      'en': '',
-    },
-    '7mmh93tv': {
-      'pt': 'Home',
-      'en': '',
-    },
-  },
   // boardPronome
   {
     'sgl4hm1d': {
@@ -1505,6 +820,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // boardEscola
   {
     '646akfyp': {
+      'pt': 'Home',
+      'en': '',
+    },
+  },
+  // boardSaudacoes
+  {
+    'chq21joi': {
       'pt': 'Home',
       'en': '',
     },
@@ -1598,6 +920,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': 'Para trocar sua senha, informe seu e-mail',
       'en': '',
     },
+    'g0u9mv6j': {
+      'pt': 'OBS: CONFIRA SUA CAIXA DE SPAM',
+      'en': '',
+    },
     'aogmtrzd': {
       'pt': 'Email',
       'en': '',
@@ -1609,24 +935,44 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // authHistory
   {
-    '7tpzat2s': {
+    '0hyt5g8p': {
       'pt': 'Entrar no histórico',
       'en': '',
     },
-    'm7pgtmou': {
+    'nb2ids6p': {
       'pt': 'Para acessar o histórico, informe seu e-mail e senha',
       'en': '',
     },
-    'bvl23dsf': {
+    'w647s6q4': {
       'pt': 'Digite o seu Email',
       'en': '',
     },
-    'mb4gt4wf': {
+    'kcgphpsp': {
       'pt': 'Digite a sua senha',
       'en': '',
     },
-    'k0ibejmn': {
+    'ptucy25m': {
       'pt': 'Entrar',
+      'en': '',
+    },
+    'vt8bv65w': {
+      'pt': 'E-mail é obrigatório',
+      'en': '',
+    },
+    '6493115p': {
+      'pt': 'E-mail inválido',
+      'en': '',
+    },
+    '197cp2sp': {
+      'pt': 'Please choose an option from the dropdown',
+      'en': '',
+    },
+    'f7gguey4': {
+      'pt': 'Senha é necessária',
+      'en': '',
+    },
+    'mic6nynu': {
+      'pt': 'Please choose an option from the dropdown',
       'en': '',
     },
   },
@@ -1643,10 +989,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'pt': '10/10',
       'en': '',
     },
-    'ifvad77v': {
-      'pt': '',
-      'en': '',
-    },
   },
   // forgotPassword
   {
@@ -1656,6 +998,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'nygmh7k6': {
       'pt': 'Para trocar sua senha, informe seu e-mail',
+      'en': '',
+    },
+    'mwrv3jo1': {
+      'pt': 'OBS: CONFIRA SUA CAIXA DE SPAM',
       'en': '',
     },
     'gtox6h4e': {
@@ -1750,24 +1096,44 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // disableKidMode
   {
-    'mk5x3r71': {
+    'dbdoskt5': {
       'pt': 'Desativar o modo infantil',
       'en': '',
     },
-    'nmy1cj84': {
+    '3oe2aunb': {
       'pt': 'Para desativar o modo infantil, informe seu e-mail e senha',
       'en': '',
     },
-    'ju4cghxv': {
+    'lee198ky': {
       'pt': 'Digite o seu Email',
       'en': '',
     },
-    't2xeybq2': {
+    'z4swittn': {
       'pt': 'Digite a sua senha',
       'en': '',
     },
-    'dr1y9rbv': {
+    'qyvxuynw': {
       'pt': 'Desativar',
+      'en': '',
+    },
+    '3o2fehx0': {
+      'pt': 'E-mail é necessário',
+      'en': '',
+    },
+    'jdjtz9vs': {
+      'pt': 'E-mail inválido',
+      'en': '',
+    },
+    'j2061891': {
+      'pt': 'Please choose an option from the dropdown',
+      'en': '',
+    },
+    'dzh52hj4': {
+      'pt': 'Senha é necessária',
+      'en': '',
+    },
+    'uervyn0o': {
+      'pt': 'Please choose an option from the dropdown',
       'en': '',
     },
   },

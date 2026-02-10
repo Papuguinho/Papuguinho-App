@@ -17,7 +17,7 @@ import 'package:flutter/foundation.dart' show kIsWeb;
 Future<void> textToSpeechAction(List<String> lista) async {
   FlutterTts flutterTts = FlutterTts();
 
-  double speechRate = 0.5;
+  double speechRate = 1.0;
 
   if (kIsWeb) {
     speechRate = 1.0;

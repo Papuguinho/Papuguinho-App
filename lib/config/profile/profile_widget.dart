@@ -6,6 +6,7 @@ import '/config/customization/personalizao/personalizao_widget.dart';
 import '/config/edit_profile/edit_profile/edit_profile_widget.dart';
 import '/config/history/auth_history/auth_history_widget.dart';
 import '/config/kid_mode/active_kid_mode/active_kid_mode_widget.dart';
+import '/config/linked_google/fail_google/fail_google_widget.dart';
 import '/config/linked_google/success_google/success_google_widget.dart';
 import '/config/talk_to_us/talk_to_us/talk_to_us_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -216,7 +217,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                         .bodySmall
                                                         .fontStyle,
                                               ),
-                                              color: Color(0xFF6AEA6A),
+                                              color: Color(0xFF5FB15F),
                                               fontSize: 14.0,
                                               letterSpacing: 0.0,
                                               fontWeight: FontWeight.normal,
@@ -325,7 +326,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                               width: 36.0,
                                               height: 36.0,
                                               decoration: BoxDecoration(
-                                                color: Color(0xFF6AEA6A),
+                                                color: Color(0xFF5FB15F),
                                                 boxShadow: [
                                                   BoxShadow(
                                                     blurRadius: 4.0,
@@ -435,7 +436,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                               width: 36.0,
                                               height: 36.0,
                                               decoration: BoxDecoration(
-                                                color: Color(0xFF6AEA6A),
+                                                color: Color(0xFF5FB15F),
                                                 boxShadow: [
                                                   BoxShadow(
                                                     blurRadius: 4.0,
@@ -587,7 +588,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                               AlignmentDirectional(0.9, 0.0),
                                           child: Icon(
                                             Icons.child_care_rounded,
-                                            color: Color(0xFF6AEA6A),
+                                            color: Color(0xFF5FB15F),
                                             size: MediaQuery.sizeOf(context)
                                                     .height *
                                                 0.04,
@@ -687,7 +688,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                             AlignmentDirectional(0.9, 0.0),
                                         child: Icon(
                                           Icons.app_registration,
-                                          color: Color(0xFF6AEA6A),
+                                          color: Color(0xFF5FB15F),
                                           size: MediaQuery.sizeOf(context)
                                                   .height *
                                               0.04,
@@ -786,7 +787,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                             AlignmentDirectional(0.9, 0.0),
                                         child: Icon(
                                           Icons.password_sharp,
-                                          color: Color(0xFF6AEA6A),
+                                          color: Color(0xFF5FB15F),
                                           size: MediaQuery.sizeOf(context)
                                                   .height *
                                               0.04,
@@ -886,7 +887,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                             AlignmentDirectional(0.9, 0.0),
                                         child: Icon(
                                           Icons.edit_rounded,
-                                          color: Color(0xFF6AEA6A),
+                                          color: Color(0xFF5FB15F),
                                           size: MediaQuery.sizeOf(context)
                                                   .height *
                                               0.04,
@@ -987,7 +988,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                             AlignmentDirectional(0.9, 0.0),
                                         child: Icon(
                                           Icons.history,
-                                          color: Color(0xFF6AEA6A),
+                                          color: Color(0xFF5FB15F),
                                           size: MediaQuery.sizeOf(context)
                                                   .height *
                                               0.04,
@@ -1087,7 +1088,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                             AlignmentDirectional(0.9, 0.0),
                                         child: Icon(
                                           Icons.email,
-                                          color: Color(0xFF6AEA6A),
+                                          color: Color(0xFF5FB15F),
                                           size: MediaQuery.sizeOf(context)
                                                   .height *
                                               0.04,
@@ -1103,7 +1104,8 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                       ),
                     ],
                   ),
-                  if (FFAppState().vinculadoGoogle == false)
+                  if ((FFAppState().vinculadoGoogle == false) &&
+                      (isWeb == true))
                     Builder(
                       builder: (context) => Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(
@@ -1150,17 +1152,14 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                               logFirebaseEvent('Container_alert_dialog');
                               await showDialog(
                                 context: context,
-                                builder: (alertDialogContext) {
-                                  return AlertDialog(
-                                    title: Text('erro'),
-                                    content: Text(_model.statusVinculo!),
-                                    actions: [
-                                      TextButton(
-                                        onPressed: () =>
-                                            Navigator.pop(alertDialogContext),
-                                        child: Text('Ok'),
-                                      ),
-                                    ],
+                                builder: (dialogContext) {
+                                  return Dialog(
+                                    elevation: 0,
+                                    insetPadding: EdgeInsets.zero,
+                                    backgroundColor: Colors.transparent,
+                                    alignment: AlignmentDirectional(0.0, 0.0)
+                                        .resolve(Directionality.of(context)),
+                                    child: FailGoogleWidget(),
                                   );
                                 },
                               );
@@ -1225,7 +1224,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                       alignment: AlignmentDirectional(0.9, 0.0),
                                       child: FaIcon(
                                         FontAwesomeIcons.google,
-                                        color: Color(0xFF6AEA6A),
+                                        color: Color(0xFF5FB15F),
                                         size:
                                             MediaQuery.sizeOf(context).height *
                                                 0.04,

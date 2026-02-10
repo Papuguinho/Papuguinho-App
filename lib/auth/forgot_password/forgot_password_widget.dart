@@ -158,7 +158,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget>
                             padding: EdgeInsets.all(12.0),
                             child: Container(
                               width: double.infinity,
-                              height: 320.0,
+                              height: 340.0,
                               constraints: BoxConstraints(
                                 maxWidth: 570.0,
                               ),
@@ -229,7 +229,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget>
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 4.0, 0.0, 24.0),
+                                                  0.0, 4.0, 0.0, 5.0),
                                           child: Text(
                                             FFLocalizations.of(context).getText(
                                               'nygmh7k6' /* Para trocar sua senha, informe... */,
@@ -261,6 +261,46 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget>
                                                       FlutterFlowTheme.of(
                                                               context)
                                                           .labelMedium
+                                                          .fontStyle,
+                                                ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 0.0, 15.0),
+                                          child: Text(
+                                            FFLocalizations.of(context).getText(
+                                              'mwrv3jo1' /* OBS: CONFIRA SUA CAIXA DE SPAM */,
+                                            ),
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium
+                                                .override(
+                                                  font: GoogleFonts.readexPro(
+                                                    fontWeight:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .bodyMedium
+                                                            .fontWeight,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .bodyMedium
+                                                            .fontStyle,
+                                                  ),
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .error,
+                                                  letterSpacing: 0.0,
+                                                  fontWeight:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium
+                                                          .fontWeight,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium
                                                           .fontStyle,
                                                 ),
                                           ),
@@ -325,7 +365,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget>
                                                 focusedBorder:
                                                     OutlineInputBorder(
                                                   borderSide: BorderSide(
-                                                    color: Color(0xFF6AEA6A),
+                                                    color: Color(0xFF5FB15F),
                                                     width: 2.0,
                                                   ),
                                                   borderRadius:
@@ -392,7 +432,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget>
                                               textAlign: TextAlign.start,
                                               keyboardType:
                                                   TextInputType.emailAddress,
-                                              cursorColor: Color(0xFF6AEA6A),
+                                              cursorColor: Color(0xFF5FB15F),
                                               validator: _model
                                                   .emailAddressCreateTextControllerValidator
                                                   .asValidator(context),
@@ -405,7 +445,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget>
                                           child: Padding(
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 0.0, 0.0, 16.0),
+                                                    0.0, 0.0, 0.0, 10.0),
                                             child: FFButtonWidget(
                                               onPressed: () async {
                                                 logFirebaseEvent(
@@ -453,7 +493,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget>
                                                     EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
-                                                color: Color(0xFF6AEA6A),
+                                                color: Color(0xFF5FB15F),
                                                 textStyle:
                                                     FlutterFlowTheme.of(context)
                                                         .titleSmall

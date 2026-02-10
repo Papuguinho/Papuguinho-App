@@ -1,8 +1,8 @@
 import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/backend/schema/structs/index.dart';
-import '/components/board_pictogramas/board_pictogramas_widget.dart';
-import '/components/cabecalho/cabecalho_widget.dart';
+import '/components/comp_boards/board_pictogramas/board_pictogramas_widget.dart';
+import '/components/comp_boards/cabecalho/cabecalho_widget.dart';
 import '/components/navbar/navbar_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -41,7 +41,8 @@ class _BoardGeralWidgetState extends State<BoardGeralWidget> {
     // On page load action.
     SchedulerBinding.instance.addPostFrameCallback((_) async {
       logFirebaseEvent('BOARD_GERAL_boardGeral_ON_INIT_STATE');
-      if (FFAppState().appCarregado == false) {
+      if ((FFAppState().appCarregado == false) &&
+          (currentUserDisplayName != null && currentUserDisplayName != '')) {
         logFirebaseEvent('boardGeral_update_app_state');
         FFAppState().appCarregado = true;
         safeSetState(() {});
@@ -53,6 +54,7 @@ class _BoardGeralWidgetState extends State<BoardGeralWidget> {
             'dono_uid',
             isEqualTo: currentUserUid,
           ),
+          limit: 20,
         );
         while (FFAppState().contadorQueryPersonalizados <
             _model.pictogramasPersonalizados!.length) {
@@ -67,14 +69,6 @@ class _BoardGeralWidgetState extends State<BoardGeralWidget> {
             img: _model.pictogramasPersonalizados
                 ?.elementAtOrNull(FFAppState().contadorQueryPersonalizados)
                 ?.imagem64,
-            index: FFAppState().contadorQueryPersonalizados,
-            donoUid: _model.pictogramasPersonalizados
-                ?.elementAtOrNull(FFAppState().contadorQueryPersonalizados)
-                ?.donoUid,
-            idPictograma: _model.pictogramasPersonalizados
-                ?.elementAtOrNull(FFAppState().contadorQueryPersonalizados)
-                ?.reference
-                .id,
           ));
           safeSetState(() {});
           logFirebaseEvent('boardGeral_update_app_state');
@@ -111,7 +105,6 @@ class _BoardGeralWidgetState extends State<BoardGeralWidget> {
 
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
       body: SafeArea(
         top: true,
         child: Container(

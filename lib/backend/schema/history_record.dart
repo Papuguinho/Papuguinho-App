@@ -16,27 +16,19 @@ class HistoryRecord extends FirestoreRecord {
     _initializeFields();
   }
 
-  // "date" field.
-  DateTime? _date;
-  DateTime? get date => _date;
-  bool hasDate() => _date != null;
-
-  // "message" field.
-  String? _message;
-  String get message => _message ?? '';
-  bool hasMessage() => _message != null;
-
-  // "email" field.
-  String? _email;
-  String get email => _email ?? '';
-  bool hasEmail() => _email != null;
+  // "listaHistorico" field.
+  List<MensagemHistoricoStruct>? _listaHistorico;
+  List<MensagemHistoricoStruct> get listaHistorico =>
+      _listaHistorico ?? const [];
+  bool hasListaHistorico() => _listaHistorico != null;
 
   DocumentReference get parentReference => reference.parent.parent!;
 
   void _initializeFields() {
-    _date = snapshotData['date'] as DateTime?;
-    _message = snapshotData['message'] as String?;
-    _email = snapshotData['email'] as String?;
+    _listaHistorico = getStructList(
+      snapshotData['listaHistorico'],
+      MensagemHistoricoStruct.fromMap,
+    );
   }
 
   static Query<Map<String, dynamic>> collection([DocumentReference? parent]) =>
@@ -78,17 +70,9 @@ class HistoryRecord extends FirestoreRecord {
       reference.path.hashCode == other.reference.path.hashCode;
 }
 
-Map<String, dynamic> createHistoryRecordData({
-  DateTime? date,
-  String? message,
-  String? email,
-}) {
+Map<String, dynamic> createHistoryRecordData() {
   final firestoreData = mapToFirestore(
-    <String, dynamic>{
-      'date': date,
-      'message': message,
-      'email': email,
-    }.withoutNulls,
+    <String, dynamic>{}.withoutNulls,
   );
 
   return firestoreData;
@@ -99,14 +83,12 @@ class HistoryRecordDocumentEquality implements Equality<HistoryRecord> {
 
   @override
   bool equals(HistoryRecord? e1, HistoryRecord? e2) {
-    return e1?.date == e2?.date &&
-        e1?.message == e2?.message &&
-        e1?.email == e2?.email;
+    const listEquality = ListEquality();
+    return listEquality.equals(e1?.listaHistorico, e2?.listaHistorico);
   }
 
   @override
-  int hash(HistoryRecord? e) =>
-      const ListEquality().hash([e?.date, e?.message, e?.email]);
+  int hash(HistoryRecord? e) => const ListEquality().hash([e?.listaHistorico]);
 
   @override
   bool isValidKey(Object? o) => o is HistoryRecord;

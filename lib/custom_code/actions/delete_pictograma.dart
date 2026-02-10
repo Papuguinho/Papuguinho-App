@@ -9,32 +9,29 @@ import 'package:flutter/material.dart';
 // Begin custom action code
 // DO NOT REMOVE OR MODIFY THE CODE ABOVE!
 
+import '/custom_code/actions/index.dart';
+import '/flutter_flow/custom_functions.dart';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 Future deletePictograma(
   String nomeColecao,
   String docId,
-  String idUsuarioAtual,
 ) async {
-  // 1. Criamos a referência do documento montando o caminho com as Strings
+  // 1. Criamos a referência direta para o documento.
+  // Note que removemos o parâmetro idUsuarioAtual, pois a validação
+  // deve ser feita pelas Security Rules do Firebase para economizar leituras.
   DocumentReference docRef =
       FirebaseFirestore.instance.collection(nomeColecao).doc(docId);
 
-  // 2. Buscamos o documento para validar o dono
-  DocumentSnapshot snapshot = await docRef.get();
-
-  if (snapshot.exists) {
-    final data = snapshot.data() as Map<String, dynamic>;
-
-    // 3. Verificamos se o dono_uid é igual ao usuário atual
-    if (data['dono_uid'] == idUsuarioAtual) {
-      await docRef.delete();
-      print("Sucesso: Item $docId deletado da coleção $nomeColecao");
-    } else {
-      print("Erro: Usuário não tem permissão para deletar.");
-    }
-  } else {
-    print("Erro: Documento não encontrado.");
+  try {
+    // 2. Manda deletar direto.
+    // Se o usuário não for o dono, o Firebase retornará um erro automaticamente
+    // baseado nas suas regras de segurança, custando 0 leituras extras no seu código.
+    await docRef.delete();
+    print("Sucesso: Item $docId deletado da coleção $nomeColecao");
+  } catch (e) {
+    print("Erro ao deletar: $e");
   }
 }
 // Set your action name, define your arguments and return parameter,

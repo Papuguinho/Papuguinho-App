@@ -339,7 +339,7 @@ class _PersonalizaoWidgetState extends State<PersonalizaoWidget>
                                                                       .fontStyle,
                                                                 ),
                                                                 color: Color(
-                                                                    0xFF4AB24A),
+                                                                    0xFF5FB15F),
                                                                 fontSize: 20.0,
                                                                 letterSpacing:
                                                                     0.0,
@@ -361,7 +361,7 @@ class _PersonalizaoWidgetState extends State<PersonalizaoWidget>
                                                           child: Icon(
                                                             Icons.add,
                                                             color: Color(
-                                                                0xFF6AEA6A),
+                                                                0xFF5FB15F),
                                                             size: 34.0,
                                                           ),
                                                         ),
@@ -452,7 +452,7 @@ class _PersonalizaoWidgetState extends State<PersonalizaoWidget>
                                                                     .fontStyle,
                                                               ),
                                                               color: Color(
-                                                                  0xFF4AB24A),
+                                                                  0xFF5FB15F),
                                                               fontSize: 20.0,
                                                               letterSpacing:
                                                                   0.0,
@@ -475,7 +475,7 @@ class _PersonalizaoWidgetState extends State<PersonalizaoWidget>
                                                         child: Icon(
                                                           Icons.edit,
                                                           color:
-                                                              Color(0xFF6AEA6A),
+                                                              Color(0xFF5FB15F),
                                                           size: 34.0,
                                                         ),
                                                       ),

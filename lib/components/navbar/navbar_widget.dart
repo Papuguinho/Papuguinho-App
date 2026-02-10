@@ -55,7 +55,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
       height: 75.0,
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        borderRadius: BorderRadius.circular(20.0),
+        borderRadius: BorderRadius.circular(0.0),
         shape: BoxShape.rectangle,
       ),
       child: Row(
@@ -80,7 +80,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                 Icon(
                   Icons.home,
                   color: widget!.paginaAtiva == 'boardGeral'
-                      ? Color(0xFF6AEA6A)
+                      ? Color(0xFF5FB15F)
                       : FlutterFlowTheme.of(context).secondaryText,
                   size: 35.0,
                 ),
@@ -97,7 +97,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                               FlutterFlowTheme.of(context).bodyMedium.fontStyle,
                         ),
                         color: widget!.paginaAtiva == 'boardGeral'
-                            ? Color(0xFF6AEA6A)
+                            ? Color(0xFF5FB15F)
                             : FlutterFlowTheme.of(context).secondaryText,
                         letterSpacing: 0.0,
                         fontWeight:
@@ -127,7 +127,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                   Icon(
                     Icons.dashboard,
                     color: widget!.paginaAtiva == 'Pastas'
-                        ? Color(0xFF6AEA6A)
+                        ? Color(0xFF5FB15F)
                         : FlutterFlowTheme.of(context).secondaryText,
                     size: 35.0,
                   ),
@@ -145,7 +145,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                                 .fontStyle,
                           ),
                           color: widget!.paginaAtiva == 'Pastas'
-                              ? Color(0xFF6AEA6A)
+                              ? Color(0xFF5FB15F)
                               : FlutterFlowTheme.of(context).secondaryText,
                           letterSpacing: 0.0,
                           fontWeight: FlutterFlowTheme.of(context)
@@ -172,7 +172,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                   safeSetState(() {});
                   logFirebaseEvent('Column_navigate_to');
 
-                  context.goNamed(BoardGeralWidget.routeName);
+                  context.pushNamed(ProfileWidget.routeName);
 
                   return;
                 }
@@ -207,7 +207,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                           Icons.account_circle_outlined,
                           color: () {
                             if (widget!.paginaAtiva == 'Perfil') {
-                              return Color(0xFF6AEA6A);
+                              return Color(0xFF5FB15F);
                             } else if (FFAppState().modoInfantil) {
                               return FlutterFlowTheme.of(context).error;
                             } else {
@@ -239,7 +239,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                           ),
                           color: () {
                             if (widget!.paginaAtiva == 'Perfil') {
-                              return Color(0xFF6AEA6A);
+                              return Color(0xFF5FB15F);
                             } else if (FFAppState().modoInfantil == true) {
                               return Color(0xFFF00B19);
                             } else if (FFAppState().modoEdicao == true) {

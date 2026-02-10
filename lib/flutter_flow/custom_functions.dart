@@ -88,3 +88,12 @@ List<BotaoPictogramasStruct>? filtrarPictogramas(
     return listaSegura.where((item) => item.ativo == true).toList();
   }
 }
+
+DocumentReference? getHistoricoRef(String? userUID) {
+  if (userUID == null || userUID.isEmpty) {
+    return null;
+  }
+  // Caminho: users/{id}/history/registro
+  // Usamos 'registro' como ID fixo para ter apenas um doc por user
+  return FirebaseFirestore.instance.doc('users/$userUID/history/registro');
+}

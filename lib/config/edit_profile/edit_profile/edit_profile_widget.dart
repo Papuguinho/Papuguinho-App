@@ -399,7 +399,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                                                 focusedBorder:
                                                     OutlineInputBorder(
                                                   borderSide: BorderSide(
-                                                    color: Color(0xFF6AEA6A),
+                                                    color: Color(0xFF5FB15F),
                                                     width: 2.0,
                                                   ),
                                                   borderRadius:
@@ -466,7 +466,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                                                             .fontStyle,
                                                   ),
                                               keyboardType: TextInputType.name,
-                                              cursorColor: Color(0xFF6AEA6A),
+                                              cursorColor: Color(0xFF5FB15F),
                                               validator: _model
                                                   .fullNameTextController1Validator
                                                   .asValidator(context),
@@ -581,7 +581,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                                                 focusedBorder:
                                                     OutlineInputBorder(
                                                   borderSide: BorderSide(
-                                                    color: Color(0xFF6AEA6A),
+                                                    color: Color(0xFF5FB15F),
                                                     width: 2.0,
                                                   ),
                                                   borderRadius:
@@ -648,7 +648,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                                                             .bodyLarge
                                                             .fontStyle,
                                                   ),
-                                              cursorColor: Color(0xFF6AEA6A),
+                                              cursorColor: Color(0xFF5FB15F),
                                               validator: _model
                                                   .dateOfBirthTextControllerValidator
                                                   .asValidator(context),
@@ -745,7 +745,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                                                 focusedBorder:
                                                     OutlineInputBorder(
                                                   borderSide: BorderSide(
-                                                    color: Color(0xFF6AEA6A),
+                                                    color: Color(0xFF5FB15F),
                                                     width: 2.0,
                                                   ),
                                                   borderRadius:
@@ -811,7 +811,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                                                             .labelLarge
                                                             .fontStyle,
                                                   ),
-                                              cursorColor: Color(0xFF6AEA6A),
+                                              cursorColor: Color(0xFF5FB15F),
                                               validator: _model
                                                   .fullNameTextController2Validator
                                                   .asValidator(context),
@@ -927,7 +927,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                                                 focusedBorder:
                                                     OutlineInputBorder(
                                                   borderSide: BorderSide(
-                                                    color: Color(0xFF6AEA6A),
+                                                    color: Color(0xFF5FB15F),
                                                     width: 2.0,
                                                   ),
                                                   borderRadius:
@@ -996,7 +996,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                                                   ),
                                               maxLines: 9,
                                               minLines: 5,
-                                              cursorColor: Color(0xFF6AEA6A),
+                                              cursorColor: Color(0xFF5FB15F),
                                               validator: _model
                                                   .descriptionTextControllerValidator
                                                   .asValidator(context),
@@ -1068,7 +1068,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                                                       val?.firstOrNull),
                                               selectedChipStyle: ChipStyle(
                                                 backgroundColor:
-                                                    Color(0x8B6AEA6A),
+                                                    Color(0xFF5FB15F),
                                                 textStyle: FlutterFlowTheme.of(
                                                         context)
                                                     .bodyMedium
@@ -1105,7 +1105,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                                                 iconColor: Color(0xFF57636C),
                                                 iconSize: 18.0,
                                                 elevation: 0.0,
-                                                borderColor: Color(0xFF6AEA6A),
+                                                borderColor: Color(0xFF5FB15F),
                                                 borderWidth: 2.0,
                                                 borderRadius:
                                                     BorderRadius.circular(8.0),
@@ -1229,7 +1229,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                                                         EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 0.0),
-                                                    color: Color(0xFF6AEA6A),
+                                                    color: Color(0xFF5FB15F),
                                                     textStyle: FlutterFlowTheme
                                                             .of(context)
                                                         .titleLarge

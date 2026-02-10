@@ -1,4 +1,4 @@
-import '/components/board_pastas/board_pastas_widget.dart';
+import '/components/comp_pastas/board_pastas/board_pastas_widget.dart';
 import '/components/navbar/navbar_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';

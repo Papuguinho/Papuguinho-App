@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 // Begin custom action code
 // DO NOT REMOVE OR MODIFY THE CODE ABOVE!
 
+//
 import 'package:flutter_tts/flutter_tts.dart';
 import 'dart:async';
 import 'dart:io' show Platform, isAndroid;
@@ -18,8 +19,7 @@ Future<void> speakText(String text) async {
   if (text.trim().isEmpty) return;
 
   final FlutterTts flutterTts = FlutterTts();
-
-  double speechRate = 0.5;
+  double speechRate = 1.0;
 
   if (kIsWeb) {
     speechRate = 1.0;
@@ -32,9 +32,7 @@ Future<void> speakText(String text) async {
   await flutterTts.setSpeechRate(speechRate);
   await flutterTts.setVolume(1.0);
   await flutterTts.setPitch(1.0);
-
   await flutterTts.speak(text);
 }
-
 // Set your action name, define your arguments and return parameter,
 // and then add the boilerplate code using the green button on the right!

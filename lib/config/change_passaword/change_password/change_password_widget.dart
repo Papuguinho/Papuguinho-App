@@ -242,7 +242,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget>
                                         Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 4.0, 0.0, 24.0),
+                                                  0.0, 4.0, 0.0, 5.0),
                                           child: Text(
                                             FFLocalizations.of(context).getText(
                                               'sfzqo4ot' /* Para trocar sua senha, informe... */,
@@ -274,6 +274,46 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget>
                                                       FlutterFlowTheme.of(
                                                               context)
                                                           .labelMedium
+                                                          .fontStyle,
+                                                ),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 0.0, 20.0),
+                                          child: Text(
+                                            FFLocalizations.of(context).getText(
+                                              'g0u9mv6j' /* OBS: CONFIRA SUA CAIXA DE SPAM */,
+                                            ),
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium
+                                                .override(
+                                                  font: GoogleFonts.readexPro(
+                                                    fontWeight:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .bodyMedium
+                                                            .fontWeight,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .bodyMedium
+                                                            .fontStyle,
+                                                  ),
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .error,
+                                                  letterSpacing: 0.0,
+                                                  fontWeight:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium
+                                                          .fontWeight,
+                                                  fontStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium
                                                           .fontStyle,
                                                 ),
                                           ),
@@ -459,7 +499,7 @@ class _ChangePasswordWidgetState extends State<ChangePasswordWidget>
                                                   .fromSTEB(0.0, 0.0, 0.0, 0.0),
                                               iconPadding: EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                              color: Color(0xFF6AEA6A),
+                                              color: Color(0xFF5FB15F),
                                               textStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .titleSmall

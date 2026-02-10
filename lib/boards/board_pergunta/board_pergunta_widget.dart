@@ -1,5 +1,5 @@
-import '/components/board_pictogramas/board_pictogramas_widget.dart';
-import '/components/cabecalho/cabecalho_widget.dart';
+import '/components/comp_boards/board_pictogramas/board_pictogramas_widget.dart';
+import '/components/comp_boards/cabecalho/cabecalho_widget.dart';
 import '/components/navbar/navbar_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';

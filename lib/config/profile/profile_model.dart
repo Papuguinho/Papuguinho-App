@@ -6,6 +6,7 @@ import '/config/customization/personalizao/personalizao_widget.dart';
 import '/config/edit_profile/edit_profile/edit_profile_widget.dart';
 import '/config/history/auth_history/auth_history_widget.dart';
 import '/config/kid_mode/active_kid_mode/active_kid_mode_widget.dart';
+import '/config/linked_google/fail_google/fail_google_widget.dart';
 import '/config/linked_google/success_google/success_google_widget.dart';
 import '/config/talk_to_us/talk_to_us/talk_to_us_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';

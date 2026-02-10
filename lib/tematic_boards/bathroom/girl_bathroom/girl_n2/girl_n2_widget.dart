@@ -52,7 +52,7 @@ class _GirlN2WidgetState extends State<GirlN2Widget> {
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         appBar: AppBar(
-          backgroundColor: Color(0xFF6AEA6A),
+          backgroundColor: Color(0xFF5FB15F),
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
             borderColor: Colors.transparent,
@@ -145,7 +145,7 @@ class _GirlN2WidgetState extends State<GirlN2Widget> {
                                         'GIRL_N2_PAGE_Container_dyfo7vm9_ON_TAP');
                                     logFirebaseEvent('Container_custom_action');
                                     await actions.speakText(
-                                      'levantar a tampa da privada',
+                                      'Subir a tampa da privada',
                                     );
                                   },
                                   child: Container(

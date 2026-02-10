@@ -52,7 +52,7 @@ class _BoyN2WidgetState extends State<BoyN2Widget> {
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         appBar: AppBar(
-          backgroundColor: Color(0xFF6AEA6A),
+          backgroundColor: Color(0xFF5FB15F),
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
             borderColor: Colors.transparent,

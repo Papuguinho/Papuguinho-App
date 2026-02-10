@@ -196,7 +196,7 @@ class _ActiveKidModeWidgetState extends State<ActiveKidModeWidget> {
                                       borderRadius: BorderRadius.circular(24.0),
                                       child: Image.asset(
                                         'assets/images/lock.jpeg',
-                                        width: 350.0,
+                                        width: 300.0,
                                         height: 250.0,
                                         fit: BoxFit.cover,
                                       ),
@@ -211,20 +211,14 @@ class _ActiveKidModeWidgetState extends State<ActiveKidModeWidget> {
                                           .override(
                                             font: GoogleFonts.readexPro(
                                               fontWeight: FontWeight.bold,
-                                              fontStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .labelLarge
-                                                      .fontStyle,
+                                              fontStyle: FontStyle.italic,
                                             ),
                                             color: FlutterFlowTheme.of(context)
                                                 .error,
                                             fontSize: 20.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.bold,
-                                            fontStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .labelLarge
-                                                    .fontStyle,
+                                            fontStyle: FontStyle.italic,
                                           ),
                                     ),
                                     Row(
@@ -255,7 +249,7 @@ class _ActiveKidModeWidgetState extends State<ActiveKidModeWidget> {
                                               logFirebaseEvent(
                                                   'Button_navigate_to');
 
-                                              context.pushNamed(
+                                              context.goNamed(
                                                   BoardGeralWidget.routeName);
                                             },
                                             text: FFLocalizations.of(context)
@@ -266,7 +260,7 @@ class _ActiveKidModeWidgetState extends State<ActiveKidModeWidget> {
                                               padding: EdgeInsets.all(20.0),
                                               iconPadding: EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                              color: Color(0xFF6AEA6A),
+                                              color: Color(0xFF5FB15F),
                                               textStyle: FlutterFlowTheme.of(
                                                       context)
                                                   .titleSmall

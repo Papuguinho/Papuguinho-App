@@ -397,8 +397,6 @@ class FFAppState extends ChangeNotifier {
     BotaoPictogramasStruct.fromSerializableMap(jsonDecode(
         '{\"texto\":\"Boa tarde\",\"cor\":\"#fff\",\"img\":\"https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/versao-1-app-caa-0zroxs/assets/t07cb1yv5r3h/Boa_tarde!.png\"}')),
     BotaoPictogramasStruct.fromSerializableMap(jsonDecode(
-        '{\"texto\":\"Tarde\",\"cor\":\"#fff\",\"img\":\"https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/versao-1-app-caa-0zroxs/assets/iibivcj9hbnq/tarde_(1).png \"}')),
-    BotaoPictogramasStruct.fromSerializableMap(jsonDecode(
         '{\"texto\":\"Acordar \",\"cor\":\"#fff\",\"img\":\"https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/versao-1-app-caa-0zroxs/assets/rp83w0s1vmj9/acordar_cedo.png\"}'))
   ];
   List<BotaoPictogramasStruct> get listaBoardTempo => _listaBoardTempo;
@@ -449,7 +447,9 @@ class FFAppState extends ChangeNotifier {
     BotaoPastaStruct.fromSerializableMap(jsonDecode(
         '{\"texto\":\"Comidas\",\"imagem\":\"https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/versao-1-app-caa-0zroxs/assets/sogtko91tcwk/comida_(2).png\",\"cor\":\"#fff\",\"destino\":\"boardComida\",\"uid\":\"Hello World\",\"conteudo\":\"[\\\"{\\\\\\\"texto\\\\\\\":\\\\\\\"Hello World\\\\\\\",\\\\\\\"cor\\\\\\\":\\\\\\\"#0000\\\\\\\",\\\\\\\"img\\\\\\\":\\\\\\\"Hello World\\\\\\\",\\\\\\\"Ativo\\\\\\\":\\\\\\\"false\\\\\\\",\\\\\\\"Index\\\\\\\":\\\\\\\"0\\\\\\\",\\\\\\\"dono_uid\\\\\\\":\\\\\\\"Hello World\\\\\\\",\\\\\\\"idPictograma\\\\\\\":\\\\\\\"Hello World\\\\\\\"}\\\"]\"}')),
     BotaoPastaStruct.fromSerializableMap(jsonDecode(
-        '{\"texto\":\"Escola\",\"imagem\":\"https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/versao-1-app-caa-0zroxs/assets/dvm6nnzr0ld7/escola.png\",\"cor\":\"#fec683\",\"destino\":\"boardEscola\",\"uid\":\"Hello World\",\"conteudo\":\"[\\\"{\\\\\\\"texto\\\\\\\":\\\\\\\"Hello World\\\\\\\",\\\\\\\"cor\\\\\\\":\\\\\\\"#0000\\\\\\\",\\\\\\\"img\\\\\\\":\\\\\\\"Hello World\\\\\\\",\\\\\\\"Ativo\\\\\\\":\\\\\\\"false\\\\\\\",\\\\\\\"Index\\\\\\\":\\\\\\\"0\\\\\\\",\\\\\\\"dono_uid\\\\\\\":\\\\\\\"Hello World\\\\\\\",\\\\\\\"idPictograma\\\\\\\":\\\\\\\"Hello World\\\\\\\"}\\\"]\"}'))
+        '{\"texto\":\"Escola\",\"imagem\":\"https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/versao-1-app-caa-0zroxs/assets/dvm6nnzr0ld7/escola.png\",\"cor\":\"#fec683\",\"destino\":\"boardEscola\",\"uid\":\"Hello World\",\"conteudo\":\"[\\\"{\\\\\\\"texto\\\\\\\":\\\\\\\"Hello World\\\\\\\",\\\\\\\"cor\\\\\\\":\\\\\\\"#0000\\\\\\\",\\\\\\\"img\\\\\\\":\\\\\\\"Hello World\\\\\\\",\\\\\\\"Ativo\\\\\\\":\\\\\\\"false\\\\\\\",\\\\\\\"Index\\\\\\\":\\\\\\\"0\\\\\\\",\\\\\\\"dono_uid\\\\\\\":\\\\\\\"Hello World\\\\\\\",\\\\\\\"idPictograma\\\\\\\":\\\\\\\"Hello World\\\\\\\"}\\\"]\"}')),
+    BotaoPastaStruct.fromSerializableMap(jsonDecode(
+        '{\"texto\":\"Saudações\",\"imagem\":\"https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/papuguinho-aplicativode-c-a-a-sn7k8p/assets/ddp27zin7nx7/apertar_a_mão.png\",\"cor\":\"#ffa9dd\",\"destino\":\"boardSaudacoes\",\"uid\":\"Hello World\",\"conteudo\":\"[\\\"{\\\\\\\"texto\\\\\\\":\\\\\\\"Hello World\\\\\\\",\\\\\\\"cor\\\\\\\":\\\\\\\"#0000\\\\\\\",\\\\\\\"img\\\\\\\":\\\\\\\"Hello World\\\\\\\",\\\\\\\"Ativo\\\\\\\":\\\\\\\"false\\\\\\\",\\\\\\\"Index\\\\\\\":\\\\\\\"0\\\\\\\",\\\\\\\"dono_uid\\\\\\\":\\\\\\\"Hello World\\\\\\\",\\\\\\\"idPictograma\\\\\\\":\\\\\\\"Hello World\\\\\\\"}\\\"]\"}'))
   ];
   List<BotaoPastaStruct> get listaBoardPastas => _listaBoardPastas;
   set listaBoardPastas(List<BotaoPastaStruct> value) {
@@ -908,7 +908,7 @@ class FFAppState extends ChangeNotifier {
     BotaoPictogramasStruct.fromSerializableMap(jsonDecode(
         '{\"texto\":\"Água\",\"cor\":\"#fec683\",\"img\":\"https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/papuguinho-aplicativode-c-a-a-sn7k8p/assets/un0jug1jexbo/água.png\",\"Ativo\":\"true\",\"Index\":\"0\",\"dono_uid\":\"Hello World\",\"idPictograma\":\"Hello World\"}')),
     BotaoPictogramasStruct.fromSerializableMap(jsonDecode(
-        '{\"texto\":\"Sala Aula\",\"cor\":\"#fec683\",\"img\":\"https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/papuguinho-aplicativode-c-a-a-sn7k8p/assets/0nt9twvh35hi/sala_de_aula.png\",\"Ativo\":\"true\",\"Index\":\"0\",\"dono_uid\":\"Hello World\",\"idPictograma\":\"Hello World\"}')),
+        '{\"texto\":\"Sala de Aula\",\"cor\":\"#fec683\",\"img\":\"https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/papuguinho-aplicativode-c-a-a-sn7k8p/assets/0nt9twvh35hi/sala_de_aula.png\",\"Ativo\":\"true\",\"Index\":\"0\",\"dono_uid\":\"Hello World\",\"idPictograma\":\"Hello World\"}')),
     BotaoPictogramasStruct.fromSerializableMap(jsonDecode(
         '{\"texto\":\"Lousa\",\"cor\":\"#fec683\",\"img\":\"https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/papuguinho-aplicativode-c-a-a-sn7k8p/assets/pjbu3ln2d28g/lousa.png\",\"Ativo\":\"true\",\"Index\":\"0\",\"dono_uid\":\"Hello World\",\"idPictograma\":\"Hello World\"}')),
     BotaoPictogramasStruct.fromSerializableMap(jsonDecode(
@@ -947,6 +947,56 @@ class FFAppState extends ChangeNotifier {
   void insertAtIndexInListaBoardEscola(
       int index, BotaoPictogramasStruct value) {
     listaBoardEscola.insert(index, value);
+  }
+
+  List<BotaoPictogramasStruct> _boardSaudacoes = [
+    BotaoPictogramasStruct.fromSerializableMap(jsonDecode(
+        '{\"texto\":\"Por Favor\",\"cor\":\"#ffa9dd\",\"img\":\"https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/papuguinho-aplicativode-c-a-a-sn7k8p/assets/147hqq6sqb8c/por_favor_(1).png\",\"Ativo\":\"true\",\"Index\":\"0\",\"dono_uid\":\"Hello World\",\"idPictograma\":\"Hello World\"}')),
+    BotaoPictogramasStruct.fromSerializableMap(jsonDecode(
+        '{\"texto\":\"Toca aqui\",\"cor\":\"#ffa9dd\",\"img\":\"https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/papuguinho-aplicativode-c-a-a-sn7k8p/assets/hbx1pijphrk7/toca_aqui.png\",\"Ativo\":\"true\",\"Index\":\"0\",\"dono_uid\":\"Hello World\",\"idPictograma\":\"Hello World\"}')),
+    BotaoPictogramasStruct.fromSerializableMap(jsonDecode(
+        '{\"texto\":\"Obrigado\",\"cor\":\"#ffa9dd\",\"img\":\"https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/papuguinho-aplicativode-c-a-a-sn7k8p/assets/8hd7ei8e8mjc/obrigado.png\",\"Ativo\":\"true\",\"Index\":\"0\",\"dono_uid\":\"Hello World\",\"idPictograma\":\"Hello World\"}')),
+    BotaoPictogramasStruct.fromSerializableMap(jsonDecode(
+        '{\"texto\":\"Sinto Muito\",\"cor\":\"#ffa9dd\",\"img\":\"https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/papuguinho-aplicativode-c-a-a-sn7k8p/assets/ktxjt8kh0bjb/sinto_muito.png\",\"Ativo\":\"true\",\"Index\":\"0\",\"dono_uid\":\"Hello World\",\"idPictograma\":\"Hello World\"}')),
+    BotaoPictogramasStruct.fromSerializableMap(jsonDecode(
+        '{\"texto\":\"Quer Ajuda?\",\"cor\":\"#ffa9dd\",\"img\":\"https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/papuguinho-aplicativode-c-a-a-sn7k8p/assets/rdurq8h5hxv3/posso_te_ajudar.png\",\"Ativo\":\"true\",\"Index\":\"0\",\"dono_uid\":\"Hello World\",\"idPictograma\":\"Hello World\"}')),
+    BotaoPictogramasStruct.fromSerializableMap(jsonDecode(
+        '{\"texto\":\"Combinado\",\"cor\":\"#ffa9dd\",\"img\":\"https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/papuguinho-aplicativode-c-a-a-sn7k8p/assets/ccdwyej641s8/apertar_a_mão_(1).png\",\"Ativo\":\"true\",\"Index\":\"0\",\"dono_uid\":\"Hello World\",\"idPictograma\":\"Hello World\"}')),
+    BotaoPictogramasStruct.fromSerializableMap(jsonDecode(
+        '{\"texto\":\"Bom proveito\",\"cor\":\"#ffa9dd\",\"img\":\"https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/papuguinho-aplicativode-c-a-a-sn7k8p/assets/9iyoyqta1uaf/bom_proveito!.png\",\"Ativo\":\"true\",\"Index\":\"0\",\"dono_uid\":\"Hello World\",\"idPictograma\":\"Hello World\"}')),
+    BotaoPictogramasStruct.fromSerializableMap(jsonDecode(
+        '{\"texto\":\"Adeus\",\"cor\":\"#ffa9dd\",\"img\":\"https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/papuguinho-aplicativode-c-a-a-sn7k8p/assets/9erl8nzx62ef/adeus.png\",\"Ativo\":\"true\",\"Index\":\"0\",\"dono_uid\":\"Hello World\",\"idPictograma\":\"Hello World\"}')),
+    BotaoPictogramasStruct.fromSerializableMap(jsonDecode(
+        '{\"texto\":\"Como está?\",\"cor\":\"#ffa9dd\",\"img\":\"https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/papuguinho-aplicativode-c-a-a-sn7k8p/assets/6vphjbp0xlus/como_está.png\",\"Ativo\":\"true\",\"Index\":\"0\",\"dono_uid\":\"Hello World\",\"idPictograma\":\"Hello World\"}')),
+    BotaoPictogramasStruct.fromSerializableMap(jsonDecode(
+        '{\"texto\":\"Saudades\",\"cor\":\"#ffa9dd\",\"img\":\"https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/papuguinho-aplicativode-c-a-a-sn7k8p/assets/epw37qxuapkw/sentir_saudades.png\",\"Ativo\":\"true\",\"Index\":\"0\",\"dono_uid\":\"Hello World\",\"idPictograma\":\"Hello World\"}'))
+  ];
+  List<BotaoPictogramasStruct> get boardSaudacoes => _boardSaudacoes;
+  set boardSaudacoes(List<BotaoPictogramasStruct> value) {
+    _boardSaudacoes = value;
+  }
+
+  void addToBoardSaudacoes(BotaoPictogramasStruct value) {
+    boardSaudacoes.add(value);
+  }
+
+  void removeFromBoardSaudacoes(BotaoPictogramasStruct value) {
+    boardSaudacoes.remove(value);
+  }
+
+  void removeAtIndexFromBoardSaudacoes(int index) {
+    boardSaudacoes.removeAt(index);
+  }
+
+  void updateBoardSaudacoesAtIndex(
+    int index,
+    BotaoPictogramasStruct Function(BotaoPictogramasStruct) updateFn,
+  ) {
+    boardSaudacoes[index] = updateFn(_boardSaudacoes[index]);
+  }
+
+  void insertAtIndexInBoardSaudacoes(int index, BotaoPictogramasStruct value) {
+    boardSaudacoes.insert(index, value);
   }
 }
 

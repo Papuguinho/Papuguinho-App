@@ -152,7 +152,7 @@ class _CalendarioWidgetState extends State<CalendarioWidget> {
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           0.0, 10.0, 0.0, 0.0),
                                       child: FlutterFlowCalendar(
-                                        color: Color(0xFF6AEA6A),
+                                        color: Color(0xFF5FB15F),
                                         iconColor: Colors.black,
                                         weekFormat: false,
                                         weekStartsMonday: false,
@@ -202,7 +202,7 @@ class _CalendarioWidgetState extends State<CalendarioWidget> {
                                                         .labelLarge
                                                         .fontStyle,
                                               ),
-                                              color: Color(0xFF6AEA6A),
+                                              color: Color(0xFF5FB15F),
                                               letterSpacing: 0.0,
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
@@ -325,7 +325,7 @@ class _CalendarioWidgetState extends State<CalendarioWidget> {
                                           iconPadding:
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
-                                          color: Color(0xFF6AEA6A),
+                                          color: Color(0xFF5FB15F),
                                           textStyle: FlutterFlowTheme.of(
                                                   context)
                                               .titleSmall

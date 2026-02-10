@@ -1,11 +1,13 @@
 import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
+import '/backend/schema/structs/index.dart';
 import '/flutter_flow/flutter_flow_choice_chips.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'dart:ui';
+import '/custom_code/actions/index.dart' as actions;
 import '/index.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
@@ -229,7 +231,7 @@ class _FormWidgetState extends State<FormWidget> {
                                       ),
                                       focusedBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
-                                          color: Color(0xFF6AEA6A),
+                                          color: Color(0xFF5FB15F),
                                           width: 2.0,
                                         ),
                                         borderRadius:
@@ -284,7 +286,7 @@ class _FormWidgetState extends State<FormWidget> {
                                                   .fontStyle,
                                         ),
                                     keyboardType: TextInputType.name,
-                                    cursorColor: Color(0xFF6AEA6A),
+                                    cursorColor: Color(0xFF5FB15F),
                                     validator: _model
                                         .fullNameTextControllerValidator
                                         .asValidator(context),
@@ -375,7 +377,7 @@ class _FormWidgetState extends State<FormWidget> {
                                       ),
                                       focusedBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
-                                          color: Color(0xFF6AEA6A),
+                                          color: Color(0xFF5FB15F),
                                           width: 2.0,
                                         ),
                                         borderRadius:
@@ -430,7 +432,7 @@ class _FormWidgetState extends State<FormWidget> {
                                                   .bodyLarge
                                                   .fontStyle,
                                         ),
-                                    cursorColor: Color(0xFF6AEA6A),
+                                    cursorColor: Color(0xFF5FB15F),
                                     validator: _model
                                         .dateOfBirthTextControllerValidator
                                         .asValidator(context),
@@ -504,7 +506,7 @@ class _FormWidgetState extends State<FormWidget> {
                                       ),
                                       focusedBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
-                                          color: Color(0xFF6AEA6A),
+                                          color: Color(0xFF5FB15F),
                                           width: 2.0,
                                         ),
                                         borderRadius:
@@ -559,7 +561,7 @@ class _FormWidgetState extends State<FormWidget> {
                                                   .fontStyle,
                                         ),
                                     keyboardType: TextInputType.name,
-                                    cursorColor: Color(0xFF6AEA6A),
+                                    cursorColor: Color(0xFF5FB15F),
                                     validator: _model
                                         .schoolLevelTextControllerValidator
                                         .asValidator(context),
@@ -576,124 +578,6 @@ class _FormWidgetState extends State<FormWidget> {
                                         }),
                                     ],
                                   ),
-                                  Text(
-                                    FFLocalizations.of(context).getText(
-                                      '0lraaxue' /* Gênero */,
-                                    ),
-                                    style: FlutterFlowTheme.of(context)
-                                        .labelMedium
-                                        .override(
-                                          font: GoogleFonts.juliusSansOne(
-                                            fontWeight: FontWeight.w600,
-                                            fontStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .labelMedium
-                                                    .fontStyle,
-                                          ),
-                                          color: Color(0xFF848688),
-                                          letterSpacing: 0.0,
-                                          fontWeight: FontWeight.w600,
-                                          fontStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .labelMedium
-                                                  .fontStyle,
-                                        ),
-                                  ),
-                                  FlutterFlowChoiceChips(
-                                    options: [
-                                      ChipData(
-                                          FFLocalizations.of(context).getText(
-                                        '1v84ixb2' /* Feminino */,
-                                      )),
-                                      ChipData(
-                                          FFLocalizations.of(context).getText(
-                                        '7lo12fb5' /* Masculino */,
-                                      )),
-                                      ChipData(
-                                          FFLocalizations.of(context).getText(
-                                        'ehr3nd6c' /* Outro */,
-                                      ))
-                                    ],
-                                    onChanged: (val) => safeSetState(() =>
-                                        _model.genderValue = val?.firstOrNull),
-                                    selectedChipStyle: ChipStyle(
-                                      backgroundColor: Color(0x8B6AEA6A),
-                                      textStyle: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            font: GoogleFonts.readexPro(
-                                              fontWeight:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .fontWeight,
-                                              fontStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .fontStyle,
-                                            ),
-                                            color: FlutterFlowTheme.of(context)
-                                                .primaryText,
-                                            letterSpacing: 0.0,
-                                            fontWeight:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyMedium
-                                                    .fontWeight,
-                                            fontStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyMedium
-                                                    .fontStyle,
-                                          ),
-                                      iconColor: Colors.black,
-                                      iconSize: 18.0,
-                                      elevation: 0.0,
-                                      borderColor: Color(0xFF6AEA6A),
-                                      borderWidth: 2.0,
-                                      borderRadius: BorderRadius.circular(8.0),
-                                    ),
-                                    unselectedChipStyle: ChipStyle(
-                                      backgroundColor: Color(0xFFD9D9D9),
-                                      textStyle: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            font: GoogleFonts.readexPro(
-                                              fontWeight:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .fontWeight,
-                                              fontStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .fontStyle,
-                                            ),
-                                            color: FlutterFlowTheme.of(context)
-                                                .secondaryText,
-                                            letterSpacing: 0.0,
-                                            fontWeight:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyMedium
-                                                    .fontWeight,
-                                            fontStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyMedium
-                                                    .fontStyle,
-                                          ),
-                                      iconColor: Colors.black,
-                                      iconSize: 18.0,
-                                      elevation: 0.0,
-                                      borderColor: Color(0xFFC2C4C6),
-                                      borderWidth: 2.0,
-                                      borderRadius: BorderRadius.circular(8.0),
-                                    ),
-                                    chipSpacing: 12.0,
-                                    rowSpacing: 12.0,
-                                    multiselect: false,
-                                    alignment: WrapAlignment.start,
-                                    controller: _model.genderValueController ??=
-                                        FormFieldController<List<String>>(
-                                      [],
-                                    ),
-                                    wrapped: true,
-                                  ),
                                   TextFormField(
                                     controller:
                                         _model.descriptionTextController,
@@ -704,7 +588,7 @@ class _FormWidgetState extends State<FormWidget> {
                                     decoration: InputDecoration(
                                       labelText:
                                           FFLocalizations.of(context).getText(
-                                        'f2tevwz9' /* Motivo de usar o aplicativo, d... */,
+                                        'f2tevwz9' /* Motivo de usar o aplicativo */,
                                       ),
                                       labelStyle: FlutterFlowTheme.of(context)
                                           .bodyLarge
@@ -768,7 +652,7 @@ class _FormWidgetState extends State<FormWidget> {
                                       ),
                                       focusedBorder: OutlineInputBorder(
                                         borderSide: BorderSide(
-                                          color: Color(0xFF6AEA6A),
+                                          color: Color(0xFF5FB15F),
                                           width: 2.0,
                                         ),
                                         borderRadius:
@@ -825,7 +709,7 @@ class _FormWidgetState extends State<FormWidget> {
                                         ),
                                     maxLines: 9,
                                     minLines: 5,
-                                    cursorColor: Color(0xFF6AEA6A),
+                                    cursorColor: Color(0xFF5FB15F),
                                     validator: _model
                                         .descriptionTextControllerValidator
                                         .asValidator(context),
@@ -841,6 +725,124 @@ class _FormWidgetState extends State<FormWidget> {
                                           );
                                         }),
                                     ],
+                                  ),
+                                  Text(
+                                    FFLocalizations.of(context).getText(
+                                      '0lraaxue' /* Gênero */,
+                                    ),
+                                    style: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .override(
+                                          font: GoogleFonts.juliusSansOne(
+                                            fontWeight: FontWeight.w600,
+                                            fontStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .labelMedium
+                                                    .fontStyle,
+                                          ),
+                                          color: Color(0xFF848688),
+                                          letterSpacing: 0.0,
+                                          fontWeight: FontWeight.w600,
+                                          fontStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .labelMedium
+                                                  .fontStyle,
+                                        ),
+                                  ),
+                                  FlutterFlowChoiceChips(
+                                    options: [
+                                      ChipData(
+                                          FFLocalizations.of(context).getText(
+                                        '1v84ixb2' /* Feminino */,
+                                      )),
+                                      ChipData(
+                                          FFLocalizations.of(context).getText(
+                                        '7lo12fb5' /* Masculino */,
+                                      )),
+                                      ChipData(
+                                          FFLocalizations.of(context).getText(
+                                        'ehr3nd6c' /* Outro */,
+                                      ))
+                                    ],
+                                    onChanged: (val) => safeSetState(() =>
+                                        _model.genderValue = val?.firstOrNull),
+                                    selectedChipStyle: ChipStyle(
+                                      backgroundColor: Color(0xFF5FB15F),
+                                      textStyle: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .override(
+                                            font: GoogleFonts.readexPro(
+                                              fontWeight:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .fontWeight,
+                                              fontStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .fontStyle,
+                                            ),
+                                            color: FlutterFlowTheme.of(context)
+                                                .primaryText,
+                                            letterSpacing: 0.0,
+                                            fontWeight:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodyMedium
+                                                    .fontWeight,
+                                            fontStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodyMedium
+                                                    .fontStyle,
+                                          ),
+                                      iconColor: Colors.black,
+                                      iconSize: 18.0,
+                                      elevation: 0.0,
+                                      borderColor: Color(0xFF5FB15F),
+                                      borderWidth: 2.0,
+                                      borderRadius: BorderRadius.circular(8.0),
+                                    ),
+                                    unselectedChipStyle: ChipStyle(
+                                      backgroundColor: Color(0xFFD9D9D9),
+                                      textStyle: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .override(
+                                            font: GoogleFonts.readexPro(
+                                              fontWeight:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .fontWeight,
+                                              fontStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMedium
+                                                      .fontStyle,
+                                            ),
+                                            color: FlutterFlowTheme.of(context)
+                                                .secondaryText,
+                                            letterSpacing: 0.0,
+                                            fontWeight:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodyMedium
+                                                    .fontWeight,
+                                            fontStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodyMedium
+                                                    .fontStyle,
+                                          ),
+                                      iconColor: Colors.black,
+                                      iconSize: 18.0,
+                                      elevation: 0.0,
+                                      borderColor: Color(0xFFC2C4C6),
+                                      borderWidth: 2.0,
+                                      borderRadius: BorderRadius.circular(8.0),
+                                    ),
+                                    chipSpacing: 12.0,
+                                    rowSpacing: 12.0,
+                                    multiselect: false,
+                                    alignment: WrapAlignment.start,
+                                    controller: _model.genderValueController ??=
+                                        FormFieldController<List<String>>(
+                                      [],
+                                    ),
+                                    wrapped: true,
                                   ),
                                   Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -877,10 +879,45 @@ class _FormWidgetState extends State<FormWidget> {
                                             googleLinked: false,
                                           ));
                                           logFirebaseEvent(
+                                              'Button_custom_action');
+                                          _model.datasemTime = await actions
+                                              .removeTimeFromDateTime(
+                                            getCurrentTimestamp,
+                                          );
+                                          logFirebaseEvent(
+                                              'Button_backend_call');
+
+                                          await HistoryRecord.createDoc(
+                                            currentUserReference!,
+                                            id: 'registro',
+                                          ).set({
+                                            ...mapToFirestore(
+                                              {
+                                                'listaHistorico': [
+                                                  getMensagemHistoricoFirestoreData(
+                                                    updateMensagemHistoricoStruct(
+                                                      MensagemHistoricoStruct(
+                                                        mensagem:
+                                                            'CRIEI A CONTA',
+                                                        date:
+                                                            _model.datasemTime,
+                                                      ),
+                                                      clearUnsetFields: false,
+                                                      create: true,
+                                                    ),
+                                                    true,
+                                                  )
+                                                ],
+                                              },
+                                            ),
+                                          });
+                                          logFirebaseEvent(
                                               'Button_navigate_to');
 
                                           context.pushNamed(
                                               BoardGeralWidget.routeName);
+
+                                          safeSetState(() {});
                                         },
                                         text:
                                             FFLocalizations.of(context).getText(
@@ -894,7 +931,7 @@ class _FormWidgetState extends State<FormWidget> {
                                           iconPadding:
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
-                                          color: Color(0xFF6AEA6A),
+                                          color: Color(0xFF5FB15F),
                                           textStyle: FlutterFlowTheme.of(
                                                   context)
                                               .titleLarge

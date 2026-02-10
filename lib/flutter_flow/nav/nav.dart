@@ -110,16 +110,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => HistoryWidget(),
         ),
         FFRoute(
-          name: TDisciplinasWidget.routeName,
-          path: TDisciplinasWidget.routePath,
-          builder: (context, params) => TDisciplinasWidget(),
-        ),
-        FFRoute(
-          name: AminasWidget.routeName,
-          path: AminasWidget.routePath,
-          builder: (context, params) => AminasWidget(),
-        ),
-        FFRoute(
           name: BoardGeralWidget.routeName,
           path: BoardGeralWidget.routePath,
           builder: (context, params) => BoardGeralWidget(),
@@ -170,31 +160,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => TopicGirlWidget(),
         ),
         FFRoute(
-          name: TQuimicaWidget.routeName,
-          path: TQuimicaWidget.routePath,
-          builder: (context, params) => TQuimicaWidget(),
-        ),
-        FFRoute(
-          name: QuimicaOrganicaWidget.routeName,
-          path: QuimicaOrganicaWidget.routePath,
-          builder: (context, params) => QuimicaOrganicaWidget(),
-        ),
-        FFRoute(
-          name: ToNitrogenadasWidget.routeName,
-          path: ToNitrogenadasWidget.routePath,
-          builder: (context, params) => ToNitrogenadasWidget(),
-        ),
-        FFRoute(
-          name: QuimicaPraticaWidget.routeName,
-          path: QuimicaPraticaWidget.routePath,
-          builder: (context, params) => QuimicaPraticaWidget(),
-        ),
-        FFRoute(
-          name: MedicamentosWidget.routeName,
-          path: MedicamentosWidget.routePath,
-          builder: (context, params) => MedicamentosWidget(),
-        ),
-        FFRoute(
           name: BoardPronomeWidget.routeName,
           path: BoardPronomeWidget.routePath,
           builder: (context, params) => BoardPronomeWidget(),
@@ -238,6 +203,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: BoardEscolaWidget.routeName,
           path: BoardEscolaWidget.routePath,
           builder: (context, params) => BoardEscolaWidget(),
+        ),
+        FFRoute(
+          name: BoardSaudacoesWidget.routeName,
+          path: BoardSaudacoesWidget.routePath,
+          builder: (context, params) => BoardSaudacoesWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -424,17 +394,15 @@ class FFRoute {
                 )
               : builder(context, ffParams);
           final child = appStateNotifier.loading
-              ? Center(
-                  child: SizedBox(
-                    width: 50.0,
-                    height: 50.0,
-                    child: CircularProgressIndicator(
-                      valueColor: AlwaysStoppedAnimation<Color>(
-                        FlutterFlowTheme.of(context).primary,
+              ? isWeb
+                  ? Container()
+                  : Container(
+                      color: Colors.transparent,
+                      child: Image.asset(
+                        'assets/images/Design_sem_nome_(2).gif',
+                        fit: BoxFit.cover,
                       ),
-                    ),
-                  ),
-                )
+                    )
               : page;
 
           final transitionInfo = state.transitionInfo;

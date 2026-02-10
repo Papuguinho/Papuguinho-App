@@ -1,5 +1,6 @@
 import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
+import '/backend/schema/structs/index.dart';
 import '/config/history/calendario/calendario_widget.dart';
 import '/config/history/delete_history/delete_history_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
@@ -11,7 +12,6 @@ import '/flutter_flow/custom_functions.dart' as functions;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:infinite_scroll_pagination/infinite_scroll_pagination.dart';
 import 'package:provider/provider.dart';
 import 'history_model.dart';
 export 'history_model.dart';
@@ -304,12 +304,12 @@ class _HistoryWidgetState extends State<HistoryWidget> {
                                                     builder: (context) =>
                                                         FlutterFlowIconButton(
                                                       borderColor:
-                                                          Color(0xFF6AEA6A),
+                                                          Color(0xFF5FB15F),
                                                       borderRadius: 20.0,
                                                       borderWidth: 1.0,
                                                       buttonSize: 40.0,
                                                       fillColor:
-                                                          Color(0xFF6AEA6A),
+                                                          Color(0xFF5FB15F),
                                                       icon: Icon(
                                                         Icons.calendar_month,
                                                         color: Colors.black,
@@ -380,7 +380,7 @@ class _HistoryWidgetState extends State<HistoryWidget> {
                                                             FFLocalizations.of(
                                                                     context)
                                                                 .getText(
-                                                          '3op80gx2' /* Pesquise por palavras-chave... */,
+                                                          '3op80gx2' /*  Palavras-chave... */,
                                                         ),
                                                         labelStyle:
                                                             FlutterFlowTheme.of(
@@ -453,7 +453,7 @@ class _HistoryWidgetState extends State<HistoryWidget> {
                                                           borderSide:
                                                               BorderSide(
                                                             color: Color(
-                                                                0xFF6AEA6A),
+                                                                0xFF5FB15F),
                                                             width: 2.0,
                                                           ),
                                                           borderRadius:
@@ -554,7 +554,7 @@ class _HistoryWidgetState extends State<HistoryWidget> {
                                                     width: 113.0,
                                                     height: 40.0,
                                                     decoration: BoxDecoration(
-                                                      color: Color(0xFF6AEA6A),
+                                                      color: Color(0xFF5FB15F),
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               4.0),
@@ -703,200 +703,181 @@ class _HistoryWidgetState extends State<HistoryWidget> {
                                               ],
                                             ),
                                           ),
-                                          PagedListView<
-                                              DocumentSnapshot<Object?>?,
-                                              HistoryRecord>(
-                                            pagingController:
-                                                _model.setListViewController(
-                                                    HistoryRecord.collection(
-                                                            currentUserReference)
-                                                        .orderBy('date',
-                                                            descending: true),
-                                                    parent:
-                                                        currentUserReference),
-                                            padding: EdgeInsets.zero,
-                                            shrinkWrap: true,
-                                            reverse: false,
-                                            scrollDirection: Axis.vertical,
-                                            builderDelegate:
-                                                PagedChildBuilderDelegate<
-                                                    HistoryRecord>(
-                                              // Customize what your widget looks like when it's loading the first page.
-                                              firstPageProgressIndicatorBuilder:
-                                                  (_) => Center(
-                                                child: SizedBox(
-                                                  width: 50.0,
-                                                  height: 50.0,
-                                                  child:
-                                                      CircularProgressIndicator(
-                                                    valueColor:
-                                                        AlwaysStoppedAnimation<
-                                                            Color>(
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .primary,
-                                                    ),
-                                                  ),
-                                                ),
-                                              ),
-                                              // Customize what your widget looks like when it's loading another page.
-                                              newPageProgressIndicatorBuilder:
-                                                  (_) => Center(
-                                                child: SizedBox(
-                                                  width: 50.0,
-                                                  height: 50.0,
-                                                  child:
-                                                      CircularProgressIndicator(
-                                                    valueColor:
-                                                        AlwaysStoppedAnimation<
-                                                            Color>(
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .primary,
-                                                    ),
-                                                  ),
-                                                ),
-                                              ),
-                                              noItemsFoundIndicatorBuilder:
-                                                  (_) => Center(
-                                                child: Image.asset(
-                                                  'assets/images/hist.png',
-                                                ),
-                                              ),
-                                              itemBuilder:
-                                                  (context, _, listViewIndex) {
-                                                final listViewHistoryRecord = _model
-                                                    .listViewPagingController!
-                                                    .itemList![listViewIndex];
-                                                return Visibility(
-                                                  visible: (FFAppState()
-                                                              .dataC2 ==
-                                                          null) ||
-                                                      (listViewHistoryRecord
-                                                              .date ==
-                                                          FFAppState().dataC2),
-                                                  child: Container(
-                                                    decoration: BoxDecoration(
-                                                      color: Colors.white,
-                                                    ),
-                                                    child: Visibility(
-                                                      visible: functions.filtrodepesquisa(
-                                                              _model
-                                                                  .textController
-                                                                  .text,
-                                                              listViewHistoryRecord
-                                                                  .message) ??
-                                                          true,
-                                                      child: Padding(
-                                                        padding:
-                                                            EdgeInsetsDirectional
-                                                                .fromSTEB(
-                                                                    0.0,
-                                                                    0.0,
-                                                                    0.0,
-                                                                    30.0),
-                                                        child: Column(
-                                                          mainAxisSize:
-                                                              MainAxisSize.max,
-                                                          mainAxisAlignment:
-                                                              MainAxisAlignment
-                                                                  .start,
-                                                          crossAxisAlignment:
-                                                              CrossAxisAlignment
-                                                                  .start,
-                                                          children: [
-                                                            Text(
-                                                              valueOrDefault<
-                                                                  String>(
-                                                                dateTimeFormat(
-                                                                  "d/M/y",
-                                                                  listViewHistoryRecord
-                                                                      .date,
-                                                                  locale: FFLocalizations.of(
-                                                                          context)
-                                                                      .languageCode,
-                                                                ),
-                                                                '.',
-                                                              ),
-                                                              style: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .bodyMedium
-                                                                  .override(
-                                                                    font: GoogleFonts
-                                                                        .readexPro(
-                                                                      fontWeight:
-                                                                          FontWeight
-                                                                              .bold,
-                                                                      fontStyle: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .bodyMedium
-                                                                          .fontStyle,
-                                                                    ),
-                                                                    color: Colors
-                                                                        .black,
-                                                                    fontSize:
-                                                                        20.0,
-                                                                    letterSpacing:
-                                                                        0.0,
-                                                                    fontWeight:
-                                                                        FontWeight
-                                                                            .bold,
-                                                                    fontStyle: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .bodyMedium
-                                                                        .fontStyle,
-                                                                  ),
-                                                            ),
-                                                            Padding(
-                                                              padding:
-                                                                  EdgeInsetsDirectional
-                                                                      .fromSTEB(
-                                                                          0.0,
-                                                                          10.0,
-                                                                          0.0,
-                                                                          0.0),
-                                                              child: Text(
-                                                                listViewHistoryRecord
-                                                                    .message,
-                                                                style: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMedium
-                                                                    .override(
-                                                                      font: GoogleFonts
-                                                                          .readexPro(
-                                                                        fontWeight: FlutterFlowTheme.of(context)
-                                                                            .bodyMedium
-                                                                            .fontWeight,
-                                                                        fontStyle: FlutterFlowTheme.of(context)
-                                                                            .bodyMedium
-                                                                            .fontStyle,
-                                                                      ),
-                                                                      color: Colors
-                                                                          .black,
-                                                                      fontSize:
-                                                                          20.0,
-                                                                      letterSpacing:
-                                                                          0.0,
-                                                                      fontWeight: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .bodyMedium
-                                                                          .fontWeight,
-                                                                      fontStyle: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .bodyMedium
-                                                                          .fontStyle,
-                                                                    ),
-                                                              ),
-                                                            ),
-                                                          ].divide(SizedBox(
-                                                              height: 5.0)),
-                                                        ),
+                                          StreamBuilder<HistoryRecord>(
+                                            stream: HistoryRecord.getDocument(
+                                                functions.getHistoricoRef(
+                                                    currentUserUid)!),
+                                            builder: (context, snapshot) {
+                                              // Customize what your widget looks like when it's loading.
+                                              if (!snapshot.hasData) {
+                                                return Center(
+                                                  child: SizedBox(
+                                                    width: 50.0,
+                                                    height: 50.0,
+                                                    child:
+                                                        CircularProgressIndicator(
+                                                      valueColor:
+                                                          AlwaysStoppedAnimation<
+                                                              Color>(
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .primary,
                                                       ),
                                                     ),
                                                   ),
                                                 );
-                                              },
-                                            ),
+                                              }
+
+                                              final listViewHistoryRecord =
+                                                  snapshot.data!;
+
+                                              return Builder(
+                                                builder: (context) {
+                                                  final itemHistorico =
+                                                      listViewHistoryRecord
+                                                          .listaHistorico
+                                                          .toList();
+                                                  if (itemHistorico.isEmpty) {
+                                                    return Center(
+                                                      child: Image.asset(
+                                                        'assets/images/hist.png',
+                                                      ),
+                                                    );
+                                                  }
+
+                                                  return ListView.builder(
+                                                    padding: EdgeInsets.zero,
+                                                    shrinkWrap: true,
+                                                    scrollDirection:
+                                                        Axis.vertical,
+                                                    itemCount:
+                                                        itemHistorico.length,
+                                                    itemBuilder: (context,
+                                                        itemHistoricoIndex) {
+                                                      final itemHistoricoItem =
+                                                          itemHistorico[
+                                                              itemHistoricoIndex];
+                                                      return Visibility(
+                                                        visible: (FFAppState()
+                                                                    .dataC2 ==
+                                                                null) ||
+                                                            (itemHistoricoItem
+                                                                    .date ==
+                                                                FFAppState()
+                                                                    .dataC2),
+                                                        child: Container(
+                                                          decoration:
+                                                              BoxDecoration(
+                                                            color: Colors.white,
+                                                          ),
+                                                          child: Visibility(
+                                                            visible: functions.filtrodepesquisa(
+                                                                    _model
+                                                                        .textController
+                                                                        .text,
+                                                                    itemHistoricoItem
+                                                                        .mensagem) ??
+                                                                true,
+                                                            child: Padding(
+                                                              padding:
+                                                                  EdgeInsetsDirectional
+                                                                      .fromSTEB(
+                                                                          0.0,
+                                                                          0.0,
+                                                                          0.0,
+                                                                          30.0),
+                                                              child: Column(
+                                                                mainAxisSize:
+                                                                    MainAxisSize
+                                                                        .max,
+                                                                mainAxisAlignment:
+                                                                    MainAxisAlignment
+                                                                        .start,
+                                                                crossAxisAlignment:
+                                                                    CrossAxisAlignment
+                                                                        .start,
+                                                                children: [
+                                                                  Text(
+                                                                    valueOrDefault<
+                                                                        String>(
+                                                                      dateTimeFormat(
+                                                                        "d/M/y",
+                                                                        itemHistoricoItem
+                                                                            .date,
+                                                                        locale:
+                                                                            FFLocalizations.of(context).languageCode,
+                                                                      ),
+                                                                      '.',
+                                                                    ),
+                                                                    style: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .override(
+                                                                          font:
+                                                                              GoogleFonts.readexPro(
+                                                                            fontWeight:
+                                                                                FontWeight.bold,
+                                                                            fontStyle:
+                                                                                FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                          ),
+                                                                          color:
+                                                                              Colors.black,
+                                                                          fontSize:
+                                                                              20.0,
+                                                                          letterSpacing:
+                                                                              0.0,
+                                                                          fontWeight:
+                                                                              FontWeight.bold,
+                                                                          fontStyle: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontStyle,
+                                                                        ),
+                                                                  ),
+                                                                  Padding(
+                                                                    padding: EdgeInsetsDirectional
+                                                                        .fromSTEB(
+                                                                            0.0,
+                                                                            10.0,
+                                                                            0.0,
+                                                                            0.0),
+                                                                    child: Text(
+                                                                      itemHistoricoItem
+                                                                          .mensagem,
+                                                                      style: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .override(
+                                                                            font:
+                                                                                GoogleFonts.readexPro(
+                                                                              fontWeight: FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                            ),
+                                                                            color:
+                                                                                Colors.black,
+                                                                            fontSize:
+                                                                                20.0,
+                                                                            letterSpacing:
+                                                                                0.0,
+                                                                            fontWeight:
+                                                                                FlutterFlowTheme.of(context).bodyMedium.fontWeight,
+                                                                            fontStyle:
+                                                                                FlutterFlowTheme.of(context).bodyMedium.fontStyle,
+                                                                          ),
+                                                                    ),
+                                                                  ),
+                                                                ].divide(SizedBox(
+                                                                    height:
+                                                                        5.0)),
+                                                              ),
+                                                            ),
+                                                          ),
+                                                        ),
+                                                      );
+                                                    },
+                                                  );
+                                                },
+                                              );
+                                            },
                                           ),
                                         ],
                                       ),

@@ -1,4 +1,4 @@
-import '/components/board_pastas/board_pastas_widget.dart';
+import '/components/comp_pastas/board_pastas/board_pastas_widget.dart';
 import '/components/navbar/navbar_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -54,7 +54,7 @@ class _PastasWidgetState extends State<PastasWidget> {
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
         appBar: AppBar(
-          backgroundColor: Color(0xFF6AEA6A),
+          backgroundColor: Color(0xFF5FB15F),
           automaticallyImplyLeading: false,
           title: Text(
             FFLocalizations.of(context).getText(
@@ -67,7 +67,7 @@ class _PastasWidgetState extends State<PastasWidget> {
                     fontStyle:
                         FlutterFlowTheme.of(context).headlineMedium.fontStyle,
                   ),
-                  color: Colors.white,
+                  color: Color(0xFFF5F5F5),
                   fontSize: 25.0,
                   letterSpacing: 0.0,
                   fontWeight:

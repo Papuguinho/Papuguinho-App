@@ -1,10 +1,12 @@
 import '/auth/firebase_auth/auth_util.dart';
+import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'dart:ui';
-import '/custom_code/actions/index.dart' as actions;
+import '/flutter_flow/custom_functions.dart' as functions;
 import '/index.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -212,12 +214,19 @@ class _DeleteHistoryWidgetState extends State<DeleteHistoryWidget> {
                                               logFirebaseEvent(
                                                   'DELETE_HISTORY_COMP_SIM_BTN_ON_TAP');
                                               logFirebaseEvent(
-                                                  'Button_custom_action');
-                                              await actions.deleteSubcollection(
-                                                'users',
-                                                currentUserReference!.id,
-                                                'history',
-                                              );
+                                                  'Button_backend_call');
+
+                                              await functions
+                                                  .getHistoricoRef(
+                                                      currentUserUid)!
+                                                  .update({
+                                                ...mapToFirestore(
+                                                  {
+                                                    'listaHistorico':
+                                                        FieldValue.delete(),
+                                                  },
+                                                ),
+                                              });
                                               logFirebaseEvent(
                                                   'Button_navigate_to');
 
@@ -232,7 +241,7 @@ class _DeleteHistoryWidgetState extends State<DeleteHistoryWidget> {
                                               padding: EdgeInsets.all(20.0),
                                               iconPadding: EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                              color: Color(0xFF6AEA6A),
+                                              color: Color(0xFF5FB15F),
                                               textStyle: FlutterFlowTheme.of(
                                                       context)
                                                   .titleSmall

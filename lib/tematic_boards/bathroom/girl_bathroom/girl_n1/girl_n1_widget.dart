@@ -52,7 +52,7 @@ class _GirlN1WidgetState extends State<GirlN1Widget> {
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         appBar: AppBar(
-          backgroundColor: Color(0xFF6AEA6A),
+          backgroundColor: Color(0xFF5FB15F),
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
             borderColor: Colors.transparent,

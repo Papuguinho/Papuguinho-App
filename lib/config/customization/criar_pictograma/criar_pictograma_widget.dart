@@ -555,7 +555,7 @@ class _CriarPictogramaWidgetState extends State<CriarPictogramaWidget>
                                                                 valueOrDefault<
                                                                     Color>(
                                                               corItemItem,
-                                                              Color(0xFF6AEA6A),
+                                                              Color(0xFF5FB15F),
                                                             ),
                                                             shape:
                                                                 BoxShape.circle,
@@ -692,7 +692,7 @@ class _CriarPictogramaWidgetState extends State<CriarPictogramaWidget>
                                         iconPadding:
                                             EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
-                                        color: Color(0xFF6AEA6A),
+                                        color: Color(0xFF5FB15F),
                                         textStyle: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .override(

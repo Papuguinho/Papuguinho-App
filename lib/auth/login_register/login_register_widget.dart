@@ -298,7 +298,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                         .titleMedium
                                                         .fontStyle,
                                               ),
-                                          indicatorColor: Color(0xFF6AEA6A),
+                                          indicatorColor: Color(0xFF5FB15F),
                                           indicatorWeight: 3.0,
                                           tabs: [
                                             Tab(
@@ -501,7 +501,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                               borderSide:
                                                                   BorderSide(
                                                                 color: Color(
-                                                                    0xFF6AEA6A),
+                                                                    0xFF5FB15F),
                                                                 width: 2.0,
                                                               ),
                                                               borderRadius:
@@ -578,7 +578,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                               TextInputType
                                                                   .emailAddress,
                                                           cursorColor:
-                                                              Color(0xFF6AEA6A),
+                                                              Color(0xFF5FB15F),
                                                           validator: _model
                                                               .emailAddressCreateTextControllerValidator
                                                               .asValidator(
@@ -659,7 +659,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                               borderSide:
                                                                   BorderSide(
                                                                 color: Color(
-                                                                    0xFF6AEA6A),
+                                                                    0xFF5FB15F),
                                                                 width: 2.0,
                                                               ),
                                                               borderRadius:
@@ -752,7 +752,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                     .fontStyle,
                                                               ),
                                                           cursorColor:
-                                                              Color(0xFF6AEA6A),
+                                                              Color(0xFF5FB15F),
                                                           validator: _model
                                                               .passwordCreateTextControllerValidator
                                                               .asValidator(
@@ -835,7 +835,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                               borderSide:
                                                                   BorderSide(
                                                                 color: Color(
-                                                                    0xFF6AEA6A),
+                                                                    0xFF5FB15F),
                                                                 width: 2.0,
                                                               ),
                                                               borderRadius:
@@ -928,7 +928,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                     .fontStyle,
                                                               ),
                                                           cursorColor:
-                                                              Color(0xFF6AEA6A),
+                                                              Color(0xFF5FB15F),
                                                           validator: _model
                                                               .passwordConfirmTextControllerValidator
                                                               .asValidator(
@@ -1026,7 +1026,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                         0.0,
                                                                         0.0),
                                                             color: Color(
-                                                                0xFF6AEA6A),
+                                                                0xFF5FB15F),
                                                             textStyle:
                                                                 FlutterFlowTheme.of(
                                                                         context)
@@ -1208,10 +1208,9 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                     .labelLarge
                                                                     .override(
                                                                       font: GoogleFonts
-                                                                          .readexPro(
-                                                                        fontWeight: FlutterFlowTheme.of(context)
-                                                                            .labelLarge
-                                                                            .fontWeight,
+                                                                          .juliusSansOne(
+                                                                        fontWeight:
+                                                                            FontWeight.w500,
                                                                         fontStyle: FlutterFlowTheme.of(context)
                                                                             .labelLarge
                                                                             .fontStyle,
@@ -1220,10 +1219,9 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                           .black,
                                                                       letterSpacing:
                                                                           0.0,
-                                                                      fontWeight: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .labelLarge
-                                                                          .fontWeight,
+                                                                      fontWeight:
+                                                                          FontWeight
+                                                                              .w500,
                                                                       fontStyle: FlutterFlowTheme.of(
                                                                               context)
                                                                           .labelLarge
@@ -1247,7 +1245,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                               borderSide:
                                                                   BorderSide(
                                                                 color: Color(
-                                                                    0xFF6AEA6A),
+                                                                    0xFF5FB15F),
                                                                 width: 2.0,
                                                               ),
                                                               borderRadius:
@@ -1326,7 +1324,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                               TextInputType
                                                                   .emailAddress,
                                                           cursorColor:
-                                                              Color(0xFF6AEA6A),
+                                                              Color(0xFF5FB15F),
                                                           validator: _model
                                                               .emailAddressTextControllerValidator
                                                               .asValidator(
@@ -1370,10 +1368,9 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                     .labelLarge
                                                                     .override(
                                                                       font: GoogleFonts
-                                                                          .readexPro(
-                                                                        fontWeight: FlutterFlowTheme.of(context)
-                                                                            .labelLarge
-                                                                            .fontWeight,
+                                                                          .juliusSansOne(
+                                                                        fontWeight:
+                                                                            FontWeight.w500,
                                                                         fontStyle: FlutterFlowTheme.of(context)
                                                                             .labelLarge
                                                                             .fontStyle,
@@ -1382,10 +1379,9 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                           .black,
                                                                       letterSpacing:
                                                                           0.0,
-                                                                      fontWeight: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .labelLarge
-                                                                          .fontWeight,
+                                                                      fontWeight:
+                                                                          FontWeight
+                                                                              .w500,
                                                                       fontStyle: FlutterFlowTheme.of(
                                                                               context)
                                                                           .labelLarge
@@ -1409,7 +1405,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                               borderSide:
                                                                   BorderSide(
                                                                 color: Color(
-                                                                    0xFF6AEA6A),
+                                                                    0xFF5FB15F),
                                                                 width: 2.0,
                                                               ),
                                                               borderRadius:
@@ -1506,7 +1502,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                     .fontStyle,
                                                               ),
                                                           cursorColor:
-                                                              Color(0xFF6AEA6A),
+                                                              Color(0xFF5FB15F),
                                                           validator: _model
                                                               .passwordTextControllerValidator
                                                               .asValidator(
@@ -1583,7 +1579,7 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                         0.0,
                                                                         0.0),
                                                             color: Color(
-                                                                0xFF6AEA6A),
+                                                                0xFF5FB15F),
                                                             textStyle:
                                                                 FlutterFlowTheme.of(
                                                                         context)
@@ -1626,32 +1622,47 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                         ),
                                                       ),
                                                     ),
-                                                    Align(
-                                                      alignment:
-                                                          AlignmentDirectional(
-                                                              0.0, 0.0),
-                                                      child: Padding(
-                                                        padding:
-                                                            EdgeInsetsDirectional
-                                                                .fromSTEB(
-                                                                    16.0,
-                                                                    0.0,
-                                                                    16.0,
-                                                                    5.0),
-                                                        child: Text(
-                                                          FFLocalizations.of(
-                                                                  context)
-                                                              .getText(
-                                                            'm56x2493' /* Ou entre com */,
-                                                          ),
-                                                          textAlign:
-                                                              TextAlign.center,
-                                                          style: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .labelMedium
-                                                              .override(
-                                                                font: GoogleFonts
-                                                                    .readexPro(
+                                                    if ((FFAppState()
+                                                                .vinculadoGoogle ==
+                                                            true) &&
+                                                        (isWeb == true))
+                                                      Align(
+                                                        alignment:
+                                                            AlignmentDirectional(
+                                                                0.0, 0.0),
+                                                        child: Padding(
+                                                          padding:
+                                                              EdgeInsetsDirectional
+                                                                  .fromSTEB(
+                                                                      16.0,
+                                                                      0.0,
+                                                                      16.0,
+                                                                      5.0),
+                                                          child: Text(
+                                                            FFLocalizations.of(
+                                                                    context)
+                                                                .getText(
+                                                              'm56x2493' /* Ou entre com */,
+                                                            ),
+                                                            textAlign: TextAlign
+                                                                .center,
+                                                            style: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .labelMedium
+                                                                .override(
+                                                                  font: GoogleFonts
+                                                                      .readexPro(
+                                                                    fontWeight: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .labelMedium
+                                                                        .fontWeight,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .labelMedium
+                                                                        .fontStyle,
+                                                                  ),
+                                                                  letterSpacing:
+                                                                      0.0,
                                                                   fontWeight: FlutterFlowTheme.of(
                                                                           context)
                                                                       .labelMedium
@@ -1661,20 +1672,9 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                       .labelMedium
                                                                       .fontStyle,
                                                                 ),
-                                                                letterSpacing:
-                                                                    0.0,
-                                                                fontWeight: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .labelMedium
-                                                                    .fontWeight,
-                                                                fontStyle: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .labelMedium
-                                                                    .fontStyle,
-                                                              ),
+                                                          ),
                                                         ),
                                                       ),
-                                                    ),
                                                     Align(
                                                       alignment:
                                                           AlignmentDirectional(
@@ -1697,9 +1697,10 @@ class _LoginRegisterWidgetState extends State<LoginRegisterWidget>
                                                                 .down,
                                                         clipBehavior: Clip.none,
                                                         children: [
-                                                          if (FFAppState()
-                                                                  .vinculadoGoogle ==
-                                                              true)
+                                                          if ((FFAppState()
+                                                                      .vinculadoGoogle ==
+                                                                  true) &&
+                                                              (isWeb == true))
                                                             Padding(
                                                               padding:
                                                                   EdgeInsetsDirectional
